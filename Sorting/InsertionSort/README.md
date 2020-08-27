@@ -23,6 +23,7 @@
 
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif)[![http://img.youtube.com/vi/JU767SDMDvA/0.jpg](http://img.youtube.com/vi/JU767SDMDvA/0.jpg)](https://youtu.be/JU767SDMDvA "Insertion Sort")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Python Implementation
 ``` python
