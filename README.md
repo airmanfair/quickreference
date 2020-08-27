@@ -1,5 +1,3 @@
-[testing link](/Sorting/InsertionSort/README.md)
-
 <table style="width:100%">
 	<tr style="text-align: center; font-size:20px;">
 		<td><strong>Algorithms</strong></td>
@@ -17,8 +15,8 @@
 					<td><strong><i>Space</i></strong></td>
 				</tr>
 				<tr>
-					<td>Insertion Sort</td>
-					<td>Sorting</td>
+					<td><a href="/Sorting/InsertionSort/README.md">Insertion Sort</a></td>
+					<td><a href="/Sorting/README.md">Sorting</a></td>
 					<td>In-place</td>
 					<td>Naive</td>
 					<td><i>O</i>(n<sup>2</sup>)</td>
