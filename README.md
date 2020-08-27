@@ -3,7 +3,6 @@
 		<td>
 			<br style="text-align: center; font-size:40px;"> 
 					<strong>Algorithms</strong>
-			</br>
 			<table>
 				<tr>
 					<td><strong><i>Name</i></strong></td>
@@ -202,7 +201,6 @@
 		<td>
 			<br style="font-size:40px;"> 
 				<strong>Runtime Order</strong>
-			</br>
 			<table>
 				<tr>
 					<td><strong><i>Name</i></strong></td>
@@ -296,7 +294,3 @@
 					<td>2<sup>2<sup>poly(<i>n</i>)</sup></sup>
 					</td>
 				</tr>
-			</table>
-		</td>
-		<tr>
-</table>
