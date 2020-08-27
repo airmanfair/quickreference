@@ -4,13 +4,13 @@
     <tbody>
         <tr>
             <td><strong><i>Name</i></strong></td>
-            <td><strong><i>Problem Type</i></strong></td>
+            <td><strong><i>Type</i></strong></td>
             <td><strong><i>Category</i></strong></td>
-            <td><strong><i>Time Complexity</i></strong></td>
-            <td><strong><i>Space Complexity</i></strong></td>
+            <td><strong><i>Time</i></strong></td>
+            <td><strong><i>Space</i></strong></td>
         </tr>
         <tr>
-            <td>Insertion Sort</td>
+            <td><a href="/Sorting/InsertionSort/README.md">Insertion Sort</a></td>
             <td>In-place</td>
             <td>Naive</td>
             <td><i>O</i>(n<sup>2</sup>)</td>
