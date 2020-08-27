@@ -27,11 +27,10 @@
 # Python Implementation
 ``` python
 def insertion_sort(ary):
-    if len(ary) < 2: return ary
+    if len(ary) < 2: return
     for i in range(1, len(ary)):
         key, j = ary[i], i - 1
         while j >= 0 and ary[j] > key: 
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
-    return ary
 ```
