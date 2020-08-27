@@ -1,6 +1,6 @@
 # [Link to the main website](https://airmanfair.github.io/algoreference/)
 
-<table style="width:100%">
+<table style="width:1000px">
 	<tr>
 		<td>
 			<header>
