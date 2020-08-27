@@ -31,3 +31,12 @@ extra:
       link: https://github.com/airmanfair
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/david-j-fair/
+      
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+  - toc:
+      permalink: false
+  - pymdownx.superfences
