@@ -1,8 +1,10 @@
 <table style="width:100%">
+	<tr style="text-align: center; font-size:40px;">
+		<td><strong>Algorithms</strong></td>
+		<td><strong>Runtime Order</strong></td>	
+	</tr>
 	<tr>
 		<td>
-			<br style="text-align: center; font-size:40px;"> 
-					<strong>Algorithms</strong>
 			<table>
 				<tr>
 					<td><strong><i>Name</i></strong></td>
@@ -199,8 +201,6 @@
 			</table>
 		</td>
 		<td>
-			<br style="font-size:40px;"> 
-				<strong>Runtime Order</strong>
 			<table>
 				<tr>
 					<td><strong><i>Name</i></strong></td>
@@ -294,3 +294,7 @@
 					<td>2<sup>2<sup>poly(<i>n</i>)</sup></sup>
 					</td>
 				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
