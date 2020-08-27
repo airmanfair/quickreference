@@ -1,13 +1,9 @@
-# [Link to the main website](https://airmanfair.github.io/algoreference/)
-
-<table style="width:1000px">
+<table style="width:100%">
 	<tr>
 		<td>
-			<header>
-				<h1 style="text-align: center; font-size:40px;"> 
+			<br style="text-align: center; font-size:40px;"> 
 					<strong>Algorithms</strong>
-				</h1>
-			</header>
+			</br>
 			<table>
 				<tr>
 					<td><strong><i>Name</i></strong></td>
@@ -204,11 +200,9 @@
 			</table>
 		</td>
 		<td>
-			<header>
-				<h1 style="text-algin: center; font-size:40px;"> 
-					<strong>Runtime Order</strong>
-				</h1>
-			</header>
+			<br style="font-size:40px;"> 
+				<strong>Runtime Order</strong>
+			</br>
 			<table>
 				<tr>
 					<td><strong><i>Name</i></strong></td>
