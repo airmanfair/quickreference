@@ -1,37 +1,306 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/airmanfair/algoreference.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/airmanfair/algoreference.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<table>
+	<tr>
+		<td>
+			<header>
+				<h1 style="text-align: center; font-size:40px;"> 
+					<strong>Algorithms</strong>
+				</h1>
+			</header>
+			<table>
+				<tr>
+					<td><strong><i>Name</i></strong></td>
+					<td><strong><i>Class</i></strong></td>
+					<td><strong><i>Type</i></strong></td>
+					<td><strong><i>Category</i></strong></td>
+					<td><strong><i>Time</i></strong></td>
+					<td><strong><i>Space</i></strong></td>
+				</tr>
+				<tr>
+					<td>Insertion Sort</td>
+					<td>Sorting</td>
+					<td>In-place</td>
+					<td>Naive</td>
+					<td><i>O</i>(n<sup>2</sup>)</td>
+					<td><i>O</i>(1)</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<header>
+				<h1 style="text-algin: center; font-size:40px;"> 
+					<strong>Runtime Order</strong>
+				</h1>
+			</header>
+			<table>
+				<tr>
+					<td><strong><i>Name</i></strong></td>
+					<td><strong><i>Complexity</i></strong></td>
+				</tr>
+				<tr>
+					<td>Constant Time</td>
+					<td><i>O</i>(1)</td>
+				</tr>
+				<tr>
+					<td>Inverse Ackermann Time</td>
+					<td><i>O</i>(<i>α</i>(<i>n</i>))</td>
+				</tr>
+				<tr>
+					<td>Iterated Logarithmic Time</td>
+					<td><i>O</i>(log<span style="vertical-align: 10%">*</span>&nbsp;<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Log-Logarithmic</td>
+					<td><i>O</i>(log log <i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Logarithmic Time</td>
+					<td><i>O</i>(log&nbsp;<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Polylogarithmic Time</td>
+					<td>poly(log&nbsp;<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Fractional Power</td>
+					<td><span class="texhtml"><i>O</i>(<i>n</i><sup>c</sup>)</span> where <span class="texhtml">0 &lt; c &lt; 1</span></td>
+				</tr>
+				<tr>
+					<td>Linear Time</td>
+					<td><i>O</i>(<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>"N Log-Star N" Time</td>
+					<td><i>O</i>(<i>n</i>&nbsp;log<span style="vertical-align: 10%">*</span>&nbsp;<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Linearithmic Time</td>
+					<td><i>O</i>(<i>n</i>&nbsp;log&nbsp;<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Quasilinear Time</td>
+					<td><i>n</i>&nbsp;poly(log&nbsp;<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Quadratic Time</td>
+					<td><i>O</i>(<i>n</i><sup>2</sup>)</td>
+				</tr>
+				<tr>
+					<td>Cubic Time</td>
+					<td><i>O</i>(<i>n</i><sup>3</sup>)</td>
+				</tr>
+				<tr>
+					<td>Polynomial Time</td>
+					<td>2<sup><i>O</i>(log&nbsp;<i>n</i>)</sup> = poly(<i>n</i>)</td>
+				</tr>
+				<tr>
+					<td>Quasi-Polynomial Time</td>
+					<td>2<sup>poly(log&nbsp;<i>n</i>)</sup></td>
+				</tr>
+				<tr>
+					<td>Sub-Exponential Time
+						<br>(first definition)</td>
+					<td><i>O</i>(2<sup><i>n</i><sup><i>ε</i></sup></sup>) for all <i>ε</i>&nbsp;&gt;&nbsp;0</td>
+				</tr>
+				<tr>
+					<td>Sub-Exponential Time
+						<br>(second definition)</td>
+					<td>2<sup><i>o</i>(<i>n</i>)</sup></td>
+				</tr>
+				<tr>
+					<td>exponential time
+						<br>(with linear exponent)</td>
+					<td>2<sup><i>O</i>(<i>n</i>)</sup></td>
+				</tr>
+				<tr>
+					<td>Exponential Time</td>
+					<td>2<sup>poly(<i>n</i>)</sup></td>
+				</tr>
+				<tr>
+					<td>Factorial Time</td>
+					<td><i>O</i>(<i>n</i>!)</td>
+				</tr>
+				<tr>
+					<td>Double Exponential Time</td>
+					<td>2<sup>2<sup>poly(<i>n</i>)</sup></sup>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<tr>
+</table>
