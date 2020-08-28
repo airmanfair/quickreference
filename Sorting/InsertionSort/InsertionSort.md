@@ -35,7 +35,7 @@
             <tr style="text-align: center; font-size:20px;">
                 <td><strong>Python Implementation</strong></td>
             </tr>
-            <tr>
+            <tr style="text-align: left;">
                 <td><div class="python" markdown="1"/>
 {% highlight python %}
 def insertion_sort(ary):
