@@ -11,3 +11,8 @@
     width: 100%;
     cellspacing: 0%;
 }
+
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
