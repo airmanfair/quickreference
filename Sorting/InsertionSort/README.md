@@ -36,7 +36,8 @@
 				<td><strong>Python Implementation</strong></td>
 			</tr>
 			<tr>
-				<td><pre class="brush: python">
+				<td>
+{% highlight python %}
 def insertion_sort(ary):
     if len(ary) < 2: return
     for i in range(1, len(ary)):
@@ -44,7 +45,8 @@ def insertion_sort(ary):
         while j >= 0 and ary[j] > key: 
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
-				</pre></td>
+{% endhighlight %}
+				</td>
 			</tr>
 		</table>
 	</tr>
