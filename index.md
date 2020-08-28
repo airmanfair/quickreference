@@ -23,12 +23,12 @@
 					<td><i>O</i>(1)</td>
 				</tr>
 				<tr>
-					<td>&nbsp;</td>
-					<td>&nbsp;</td>
-					<td>&nbsp;</td>
-					<td>&nbsp;</td>
-					<td>&nbsp;</td>
-					<td>&nbsp;</td>
+					<td><a href="/quickreference/Sorting/SelectionSort/SelectionSort">Selection Sort</a></td>
+					<td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+					<td>In-place</td>
+					<td>Naive</td>
+					<td><i>O</i>(n<sup>2</sup>)</td>
+					<td><i>O</i>(1)</td>
 				</tr>
 				<tr>
 					<td>&nbsp;</td>
