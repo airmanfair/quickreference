@@ -33,8 +33,8 @@
 	<tr>
 		<table>
 			<tr style="text-align: center; font-size:20px;">
-						<td><strong>Python Implementation</strong></td>
-					</tr>
+				<td><strong>Python Implementation</strong></td>
+			</tr>
 			<tr>
 				<td><pre lang="python"><code class="language-python">
 def selection_sort(ary):
@@ -45,8 +45,7 @@ def selection_sort(ary):
             if ary[j] < ary[i_min]:
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
-		        </code></pre>
-				</td>
+				</code></pre></td>
 			</tr>
 		</table>
 	</tr>
