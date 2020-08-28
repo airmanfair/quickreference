@@ -36,7 +36,7 @@
 				<td><strong>Python Implementation</strong></td>
 			</tr>
 			<tr>
-				<td markdown="1">
+				<td><div markdown="1">
 ``` python
 def insertion_sort(ary):
     if len(ary) < 2: return
@@ -46,7 +46,7 @@ def insertion_sort(ary):
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
 ```
-				</td>
+				</div></td>
 			</tr>
 		</table>
 	</tr>
