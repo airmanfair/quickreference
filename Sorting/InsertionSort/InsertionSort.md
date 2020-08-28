@@ -1,7 +1,7 @@
 # Insertion Sort
-<table width=100%>
+<table class="full">
     <tr>
-        <table width=100%>
+        <table class="full">
             <tr>
                 <td><strong><i>Class</i></strong></td>
                 <td><strong><i>Type</i></strong></td>
@@ -19,7 +19,7 @@
         </table>
     </tr>
     <tr>
-        <table width=100%>
+        <table class="full">
             <tr style="text-align: center; font-size:20px;">
                 <td><strong>GIF</strong></td>
                 <td><strong>Video</strong></td>
@@ -31,7 +31,7 @@
         </table>
     </tr>
     <tr>
-        <table width=100%>
+        <table class="full">
             <tr style="text-align: center; font-size:20px;">
                 <td><strong>Python Implementation</strong></td>
             </tr>
