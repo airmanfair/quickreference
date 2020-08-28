@@ -36,7 +36,7 @@
                 <td><strong>Python Implementation</strong></td>
             </tr>
             <tr style="text-align: left;">
-                <td><div class="python" markdown="1">
+                <td><div class="python" markdown="1"/>
 {% highlight python %}
 def insertion_sort(ary):
     if len(ary) < 2: return
@@ -46,7 +46,7 @@ def insertion_sort(ary):
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
 {% endhighlight %}
-                </div></td>
+                </td>
             </tr>
         </table>
     </tr>
