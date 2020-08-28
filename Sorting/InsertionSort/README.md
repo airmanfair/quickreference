@@ -1,5 +1,5 @@
 # Insertion Sort
-<table  width=100% cellspacing=0%>
+<table  width=100%>
     <tr>
         <table  width=100%>
             <tr>
