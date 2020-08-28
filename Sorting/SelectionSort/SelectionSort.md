@@ -1,6 +1,6 @@
 # Selection Sort
 
-<table width=100%>
+<table width=100% cellspacing=0%>
     <tr>
         <table width=100%>
             <tr>
