@@ -1,5 +1,5 @@
 # Sorting Algorithms
-
+<link rel="stylesheet" href="/quickreference/assets/css/table.css">
 <table class="not a rip-off table">
     <tbody>
         <tr>

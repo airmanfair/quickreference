@@ -1,5 +1,5 @@
 # Selection Sort
-<link rel="stylesheet" href="/quickreference/assets/css/table.css">
+<link rel="stylesheet" href="/assets/css/table.css">
 <table class="full">
     <tr>
         <table class="full">
@@ -11,7 +11,7 @@
                 <td><strong><i>Space</i></strong></td>
             </tr>
             <tr>
-                <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                <td><a href="/Sorting/Sorting">Sorting</a></td>
                 <td>In-place</td>
                 <td>Naive</td>
                 <td><i>O</i>(n<sup>2</sup>)</td>
