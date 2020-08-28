@@ -36,7 +36,7 @@
 				<td><strong>Python Implementation</strong></td>
 			</tr>
 			<tr>
-				<td><pre lang="python"><code class="language-python">
+				<td><pre lang="python"><code class="language-python" data-lang="python">
 def selection_sort(ary):
     n = len(ary)
     for i in range(n):
