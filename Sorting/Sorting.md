@@ -2,8 +2,8 @@
 <head>
     <link rel="stylesheet" href="/quickreference/assets/css/table.css">
 </head>
-<table class="not a rip-off table">
-    <tbody>
+<body>
+    <table class="full">
         <tr>
             <td><strong><i>Name</i></strong></td>
             <td><strong><i>Type</i></strong></td>
@@ -25,9 +25,8 @@
             <td><i>O</i>(n<sup>2</sup>)</td>
             <td><i>O</i>(1)</td>
         </tr>
-    </tbody>
-    <tfoot></tfoot>
-</table>
+    </table>
+</body>
 
 # Python Implementations
 ``` python
