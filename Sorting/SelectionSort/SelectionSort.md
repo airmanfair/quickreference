@@ -1,8 +1,8 @@
 # Selection Sort
 
-<table style="width: 100%;">
+<table width=100%>
     <tr>
-        <table style="width: 100%;">
+        <table width=100%>
             <tr>
                 <td><strong><i>Class</i></strong></td>
                 <td><strong><i>Type</i></strong></td>
@@ -20,7 +20,7 @@
         </table>
     </tr>
     <tr>
-        <table style="width: 100%;">
+        <table width=100%>
             <tr style="text-align: center; font-size:20px;">
                 <td><strong>GIF</strong></td>
                 <td><strong>Video</strong></td>
@@ -32,7 +32,7 @@
         </table>
     </tr>
     <tr>
-        <table style="width: 100%;">
+        <table width=100%>
             <tr style="text-align: center; font-size:20px;">
                 <td><strong>Python Implementation</strong></td>
             </tr>
