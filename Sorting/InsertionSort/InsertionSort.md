@@ -21,6 +21,13 @@
 
 # GIF and Video References
 
+<table>
+    <tr>
+        <td><img src="InsertionSort.gif" alt="Insertion Sort GIF"/></td>
+        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    </tr>
+</table>
+
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
