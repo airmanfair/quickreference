@@ -1,5 +1,4 @@
 # Insertion Sort
-
 <table>
 	<tr>
 		<table>
@@ -23,18 +22,10 @@
 		<table>
 			<tr style="text-align: center; font-size:20px;">
 				<td><strong>GIF</strong></td>
-			</tr>
-		    <tr>
-		        <td><img src="InsertionSort.gif" alt="Insertion Sort GIF"/></td>
-		    </tr>
-		</table>
-	</tr>
-	<tr>
-		<table>
-			<tr style="text-align: center; font-size:20px;">
 				<td><strong>Video</strong></td>
 			</tr>
 		    <tr>
+		        <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
 		        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
 		    </tr>
 		</table>
