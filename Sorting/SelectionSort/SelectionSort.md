@@ -40,7 +40,7 @@
                     <td><strong>Python Implementation</strong></td>
                 </tr>
                 <tr style="text-align: left;">
-                    <td><div class="python" markdown="1"/>
+                    <div class="python" markdown="1"/>
     {% highlight python %}
     def selection_sort(ary):
         n = len(ary)
@@ -51,7 +51,6 @@
                     i_min = j
             ary[i], ary[i_min] = ary[i_min], ary[i]
     {% endhighlight %}
-                   </td>
                 </tr>
             </table>
         </tr>
