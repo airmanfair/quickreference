@@ -37,7 +37,7 @@
         <tr>
             <table class="full">
                 <tr style="text-align: center; font-size:20px;">
-                    <td><strong>Python Implementation</strong></td>
+                    <strong>Python Implementation</strong>
                 </tr>
                 <tr style="text-align: left;">
                     <div class="python" markdown="1"/>
