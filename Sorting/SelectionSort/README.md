@@ -1,4 +1,4 @@
-# Insertion Sort
+# Selection Sort
 <table>
     <tbody>
         <tr>
@@ -21,7 +21,7 @@
 
 # GIF and Video References
 
-![Alt Text](InsertionSort.gif)[![http://img.youtube.com/vi/JU767SDMDvA/0.jpg](http://img.youtube.com/vi/JU767SDMDvA/0.jpg)](https://youtu.be/JU767SDMDvA "Insertion Sort")
+![Alt Text](SelectionSort.gif)[![http://img.youtube.com/vi/g-PGLbMth_g/0.jpg](http://img.youtube.com/vi/g-PGLbMth_g/0.jpg)](https://youtu.be/g-PGLbMth_g "Selection Sort")
 
 # Python Implementation
 ``` python
