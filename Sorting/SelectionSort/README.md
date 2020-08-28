@@ -1,35 +1,35 @@
 # Selection Sort
-<table>
-	<tr>
-		<table>
-			<tr>
-			    <td><strong><i>Class</i></strong></td>
-			    <td><strong><i>Type</i></strong></td>
-			    <td><strong><i>Category</i></strong></td>
-			    <td><strong><i>Time</i></strong></td>
-			    <td><strong><i>Space</i></strong></td>
-			</tr>
-			<tr>
-			    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
-			    <td>In-place</td>
-			    <td>Naive</td>
-			    <td><i>O</i>(n<sup>2</sup>)</td>
-			    <td><i>O</i>(1)</td>
-			</tr>
-		</table>
-	</tr>
-	<tr>
-		<table>
-			<tr style="text-align: center; font-size:20px;">
-				<td><strong>GIF</strong></td>
-				<td><strong>Video</strong></td>
-			</tr>
-		    <tr>
-		        <td><img src="SelectionSort.gif" alt="Selection Sort GIF" width="80" height="315"/></td>
-		        <td><a href="https://youtu.be/g-PGLbMth_g"><img src="http://img.youtube.com/vi/g-PGLbMth_g/0.jpg" alt="Selection Sort Video" width="560" height="315"/></a></td>
-		    </tr>
-		</table>
-	</tr>
+<table style="width: 100%;">
+    <tr>
+        <table style="width: 100%;">
+            <tr>
+                <td><strong><i>Class</i></strong></td>
+                <td><strong><i>Type</i></strong></td>
+                <td><strong><i>Category</i></strong></td>
+                <td><strong><i>Time</i></strong></td>
+                <td><strong><i>Space</i></strong></td>
+            </tr>
+            <tr>
+                <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                <td>In-place</td>
+                <td>Naive</td>
+                <td><i>O</i>(n<sup>2</sup>)</td>
+                <td><i>O</i>(1)</td>
+            </tr>
+        </table>
+    </tr>
+    <tr>
+        <table style="width: 100%;">
+            <tr style="text-align: center; font-size:20px;">
+                <td><strong>GIF</strong></td>
+                <td><strong>Video</strong></td>
+            </tr>
+            <tr>
+                <td><img src="SelectionSort.gif" alt="Selection Sort GIF" width="80" height="315"/></td>
+                <td><a href="https://youtu.be/g-PGLbMth_g"><img src="http://img.youtube.com/vi/g-PGLbMth_g/0.jpg" alt="Selection Sort Video" width="560" height="315"/></a></td>
+            </tr>
+        </table>
+    </tr>
 </table>
 
 # Python Implementation
