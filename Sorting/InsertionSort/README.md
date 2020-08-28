@@ -30,6 +30,26 @@
 		    </tr>
 		</table>
 	</tr>
+	<tr>
+		<table>
+			<tr style="text-align: center; font-size:20px;">
+						<td><strong>Python Implementation</strong></td>
+					</tr>
+			<tr>
+				<td><pre lang="python">
+def selection_sort(ary):
+    n = len(ary)
+    for i in range(n):
+        i_min = i
+        for j in range(i+1, n):
+            if ary[j] < ary[i_min]:
+                i_min = j
+        ary[i], ary[i_min] = ary[i_min], ary[i]
+		        </pre>
+				</td>
+			</tr>
+		</table>
+	</tr>
 </table>
 
 # Python Implementation
