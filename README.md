@@ -15,8 +15,8 @@
 					<td><strong><i>Space</i></strong></td>
 				</tr>
 				<tr>
-					<td><a href="/quickreference/Sorting/InsertionSort/">Insertion Sort</a></td>
-					<td><a href="/quickreference/Sorting/">Sorting</a></td>
+					<td><a href="/Sorting/InsertionSort/">Insertion Sort</a></td>
+					<td><a href="/Sorting/">Sorting</a></td>
 					<td>In-place</td>
 					<td>Naive</td>
 					<td><i>O</i>(n<sup>2</sup>)</td>
