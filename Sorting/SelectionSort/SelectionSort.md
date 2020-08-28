@@ -1,8 +1,8 @@
 # Selection Sort
 
-<table>
+<table style="width:100%;display:inline-block">
 	<tr>
-		<table>
+		<table style="width:100%;display:inline-block">
 			<tr>
 			    <td><strong><i>Class</i></strong></td>
 			    <td><strong><i>Type</i></strong></td>
@@ -20,7 +20,7 @@
 		</table>
 	</tr>
 	<tr>
-		<table>
+		<table style="width:50%;display:inline-block">
 			<tr style="text-align: center; font-size:20px;">
 				<td><strong>GIF</strong></td>
 			</tr>
@@ -28,9 +28,7 @@
 		        <td><img src="SelectionSort.gif" alt="Selection Sort GIF"/></td>
 		    </tr>
 		</table>
-	</tr>
-	<tr>
-		<table>
+		<table style="width:50%;display:inline-block">
 			<tr style="text-align: center; font-size:20px;">
 				<td><strong>Video</strong></td>
 			</tr>
