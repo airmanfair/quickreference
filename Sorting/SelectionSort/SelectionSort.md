@@ -1,4 +1,4 @@
-# Selection Sort
+# Selection Sort 1
 <head>
     <link rel="stylesheet" href="/quickreference/assets/css/table.css">
 </head>
