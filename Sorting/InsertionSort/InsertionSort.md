@@ -1,36 +1,45 @@
 # Insertion Sort
-<table class="not a rip-off table">
-    <tbody>
-        <tr>
-            <td><strong><i>Class</i></strong></td>
-            <td><strong><i>Type</i></strong></td>
-            <td><strong><i>Category</i></strong></td>
-            <td><strong><i>Time</i></strong></td>
-            <td><strong><i>Space</i></strong></td>
-        </tr>
-        <tr>
-            <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
-            <td>In-place</td>
-            <td>Naive</td>
-            <td><i>O</i>(n<sup>2</sup>)</td>
-            <td><i>O</i>(1)</td>
-        </tr>
-    </tbody>
-    <tfoot></tfoot>
-</table>
-
-# GIF and Video References
 
 <table>
-    <tr>
-        <td><img src="InsertionSort.gif" alt="Insertion Sort GIF"/></td>
-        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-    </tr>
+	<tr>
+		<table>
+			<tr>
+			    <td><strong><i>Class</i></strong></td>
+			    <td><strong><i>Type</i></strong></td>
+			    <td><strong><i>Category</i></strong></td>
+			    <td><strong><i>Time</i></strong></td>
+			    <td><strong><i>Space</i></strong></td>
+			</tr>
+			<tr>
+			    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+			    <td>In-place</td>
+			    <td>Naive</td>
+			    <td><i>O</i>(n<sup>2</sup>)</td>
+			    <td><i>O</i>(1)</td>
+			</tr>
+		</table>
+	</tr>
+	<tr>
+		<table>
+			<tr style="text-align: center; font-size:20px;">
+				<td><strong>GIF</strong></td>
+			</tr>
+		    <tr>
+		        <td><img src="InsertionSort.gif" alt="Insertion Sort GIF"/></td>
+		    </tr>
+		</table>
+	</tr>
+	<tr>
+		<table>
+			<tr style="text-align: center; font-size:20px;">
+				<td><strong>Video</strong></td>
+			</tr>
+		    <tr>
+		        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+		    </tr>
+		</table>
+	</tr>
 </table>
-
-![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Python Implementation
 ``` python

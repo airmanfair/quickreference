@@ -1,5 +1,5 @@
 # Insertion Sort
-<table class="not a rip-off table">
+<table>
     <tbody>
         <tr>
             <td><strong><i>Class</i></strong></td>
@@ -21,7 +21,7 @@
 
 # GIF and Video References
 
-![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif)[![http://img.youtube.com/vi/JU767SDMDvA/0.jpg](http://img.youtube.com/vi/JU767SDMDvA/0.jpg)](https://youtu.be/JU767SDMDvA "Insertion Sort")
+![Alt Text](InsertionSort.gif)[![http://img.youtube.com/vi/JU767SDMDvA/0.jpg](http://img.youtube.com/vi/JU767SDMDvA/0.jpg)](https://youtu.be/JU767SDMDvA "Insertion Sort")
 
 # Python Implementation
 ``` python
