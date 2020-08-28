@@ -1,5 +1,7 @@
 # Sorting Algorithms
-<link rel="stylesheet" href="/assets/css/table.css">
+<head>
+    <link rel="stylesheet" href="/assets/css/table.css">
+</head>
 <table class="full">
     <tr>
         <td><strong><i>Name</i></strong></td>

@@ -1,5 +1,7 @@
 # Insertion Sort
-<link rel="stylesheet" href="/assets/css/table.css">
+<head>
+    <link rel="stylesheet" href="/assets/css/table.css">
+</head>
 <table class="full">
     <tr>
         <table class="full">
