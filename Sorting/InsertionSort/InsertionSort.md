@@ -9,7 +9,7 @@
             <td><strong><i>Space</i></strong></td>
         </tr>
         <tr>
-            <td><a href="/../">Sorting</a></td>
+            <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
             <td>In-place</td>
             <td>Naive</td>
             <td><i>O</i>(n<sup>2</sup>)</td>
