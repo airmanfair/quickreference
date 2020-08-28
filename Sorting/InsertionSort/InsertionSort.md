@@ -25,8 +25,8 @@
 				<td><strong>Video</strong></td>
 			</tr>
 		    <tr>
-		        <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
-		        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+		        <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
+		        <td><a href="https://youtu.be/JU767SDMDvA"><img src="http://img.youtube.com/vi/JU767SDMDvA/0.jpg" alt="Insertion Sort Video" width="560" height="315"/></a></td>
 		    </tr>
 		</table>
 	</tr>
@@ -36,7 +36,7 @@
 						<td><strong>Python Implementation</strong></td>
 					</tr>
 			<tr>
-				<td><pre lang="python">
+				<td><pre lang="python"><code class="language-python">
 def selection_sort(ary):
     n = len(ary)
     for i in range(n):
@@ -45,7 +45,7 @@ def selection_sort(ary):
             if ary[j] < ary[i_min]:
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
-		        </pre>
+		        </code></pre>
 				</td>
 			</tr>
 		</table>
