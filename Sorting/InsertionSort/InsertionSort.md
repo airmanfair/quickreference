@@ -36,16 +36,15 @@
 				<td><strong>Python Implementation</strong></td>
 			</tr>
 			<tr>
-				<td><pre lang="python"><code class="language-python" data-lang="python">
-def selection_sort(ary):
-    n = len(ary)
-    for i in range(n):
-        i_min = i
-        for j in range(i+1, n):
-            if ary[j] < ary[i_min]:
-                i_min = j
-        ary[i], ary[i_min] = ary[i_min], ary[i]
-				</code></pre></td>
+				<td><pre class="brush: python">
+def insertion_sort(ary):
+    if len(ary) < 2: return
+    for i in range(1, len(ary)):
+        key, j = ary[i], i - 1
+        while j >= 0 and ary[j] > key: 
+            ary[j+1], j = ary[j], j - 1
+        ary[j+1] = key
+				</pre></td>
 			</tr>
 		</table>
 	</tr>
