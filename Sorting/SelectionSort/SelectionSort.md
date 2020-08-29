@@ -37,7 +37,7 @@
                 <strong>Python Implementation</strong>
             </tr>
             <tr>
-                <td><div markdown="1"/>
+                <td markdown="block">
 {% highlight python %}
 def selection_sort(ary):
     n = len(ary)

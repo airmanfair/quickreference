@@ -36,7 +36,7 @@
                 <strong>Python Implementation</strong>
             </tr>
             <tr>
-                <td><div markdown="1"/>
+                <td markdown="block">
 {% highlight python %}
 def insertion_sort(ary):
     if len(ary) < 2: return
