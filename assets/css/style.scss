@@ -7,6 +7,10 @@
   max-width: 80%;
 }
 
+body {
+    background-color: #f2f2f2;
+}
+
 table {
     display: inline-block;
     width: 100%;
@@ -27,8 +31,4 @@ pre {
 
 figure {
     margin: 1em 1px;
-}
-
-body {
-    background-color: #f2f2f2;
 }
