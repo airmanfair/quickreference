@@ -12,11 +12,5 @@
     width: 100%;
     margin-top: 1px;
     margin-bottom: 1px;
-}
-
-.tbody {
-    width: 100%;
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
+    border-collapse: collapse;
 }
