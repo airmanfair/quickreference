@@ -11,6 +11,10 @@ table {
     width: 100%;
 }
 
+tbody {
+    display: table;
+}
+
 .markdown-body table {
     display: inline-block;
     width: 100%;
