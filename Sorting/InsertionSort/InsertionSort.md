@@ -25,7 +25,7 @@
                 <td><strong>Video</strong></td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
+                <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
                 <td><a href="https://youtu.be/JU767SDMDvA"><img src="http://img.youtube.com/vi/JU767SDMDvA/0.jpg" alt="Insertion Sort Video" width="560" height="315"/></a></td>
             </tr>
         </table>
