@@ -34,6 +34,7 @@
         <table>
             <tr style="text-align: center; font-size:20px;">
                 <td><strong><i>Python Implementation</i></strong></td>
+                <td><strong><i>Java Implementation</i></strong></td>
             </tr>
             <tr>
                 <td markdown="block">
@@ -49,6 +50,7 @@ def insertion_sort(ary):
 {% endhighlight %}
 
 <td markdown="block">
+    
 {% highlight java %}
 static void insertion_sort(int[] ary) {
     if (ary.length < 2) { 

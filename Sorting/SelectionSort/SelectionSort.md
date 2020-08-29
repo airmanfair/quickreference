@@ -48,4 +48,22 @@ def selection_sort(ary):
             if ary[j] < ary[i_min]:
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
-{% endhighlight %}                                 
+{% endhighlight %}
+                                   
+                <td markdown="block">
+    
+{% highlight java %}
+static void selection_sort(int[] ary) {
+    for (var i = 0; i < ary.length; i++) {
+        int i_min = i;
+        for (int j = i+1; j < ary.length; j++) {
+            if (ary[j] < ary[i_min]) {
+                i_min = j;
+            }
+        } 
+        int temp = ary[i];
+        ary[i] = ary[i_min];
+        ary[i_min] = temp;
+    }
+}
+{% endhighlight %}

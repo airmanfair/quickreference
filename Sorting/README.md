@@ -47,3 +47,35 @@ def selection_sort(ary):
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
 ```
+
+# Java Implementations
+``` java
+static void insertion_sort(int[] ary) {
+    if (ary.length < 2) { 
+        return;
+    }
+    for (var i = 1; i < ary.length; i++) {
+        int key = ary[i];
+        int j = i - 1;
+        while (j >= 0 && ary[j] > key) {
+            ary[j+1] = ary[j];
+            j -= 1;
+        } 
+        ary[j+1] = key;
+    }
+}
+        
+static void selection_sort(int[] ary) {
+    for (var i = 0; i < ary.length; i++) {
+        int i_min = i;
+        for (int j = i+1; j < ary.length; j++) {
+            if (ary[j] < ary[i_min]) {
+                i_min = j;
+            }
+        } 
+        int temp = ary[i];
+        ary[i] = ary[i_min];
+        ary[i_min] = temp;
+    }
+}
+```
