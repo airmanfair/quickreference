@@ -26,7 +26,7 @@
             </tr>
             <tr>
                 <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
-                <td><a href="https://youtu.be/JU767SDMDvA"><img src="http://img.youtube.com/vi/JU767SDMDvA/0.jpg" alt="Insertion Sort Video" width="560" height="315"/></a></td>
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
             </tr>
         </table>
     </tr>
