@@ -37,7 +37,7 @@
                 <td><strong><i>Java Implementation</i></strong></td>
             </tr>
             <tr>
-                <td markdown="block" style="vertical-align: top;">
+                <td class="code" markdown="block" style="vertical-align: top;">
                     
 {% highlight python %}
 def insertion_sort(ary):
@@ -49,7 +49,7 @@ def insertion_sort(ary):
         ary[j+1] = key
 {% endhighlight %}
 
-<td markdown="block" style="vertical-align: top;">
+<td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
 static void insertion_sort(int[] ary) {
