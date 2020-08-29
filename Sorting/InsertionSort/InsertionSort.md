@@ -21,8 +21,8 @@
     <tr>
         <table>
             <tr style="text-align: center; font-size:20px;">
-                <td><strong>GIF</strong></td>
-                <td><strong>Video</strong></td>
+                <td><strong><i>GIF</i></strong></td>
+                <td><strong><i>Video</i></strong></td>
             </tr>
             <tr>
                 <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
@@ -33,7 +33,7 @@
     <tr>
         <table>
             <tr style="text-align: center; font-size:20px;">
-                <td><strong>Python Implementation</strong></td>
+                <td><strong><i>Python Implementation</i></strong></td>
             </tr>
             <tr>
                 <td markdown="block">
