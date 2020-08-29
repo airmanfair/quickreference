@@ -69,4 +69,3 @@ static void selection_sort(int[] ary) {
     }
 }
 {% endhighlight %}
->
