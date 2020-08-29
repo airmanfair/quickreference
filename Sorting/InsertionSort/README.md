@@ -42,6 +42,7 @@ def insertion_sort(ary):
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
 ```
+
 # Java Implementation
 ``` java
 static void insertion_sort(int[] ary) {
@@ -49,8 +50,7 @@ static void insertion_sort(int[] ary) {
         return;
     }
     for (var i = 1; i < ary.length; i++) {
-        int key = ary[i];
-        int j = i - 1;
+        int key = ary[i], j = i - 1;
         while (j >= 0 && ary[j] > key) {
             ary[j+1] = ary[j];
             j -= 1;
