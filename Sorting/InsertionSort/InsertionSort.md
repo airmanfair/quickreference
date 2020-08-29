@@ -47,8 +47,3 @@ def insertion_sort(ary):
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
 {% endhighlight %}
-                    
-            </td></tr>
-        </table>
-    </tr>
-</table>
