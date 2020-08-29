@@ -38,6 +38,7 @@
             </tr>
             <tr>
                 <td markdown="block">
+                    
 {% highlight python %}
 def selection_sort(ary):
     n = len(ary)
@@ -48,6 +49,7 @@ def selection_sort(ary):
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
 {% endhighlight %}
+                                   
            </td></tr>
         </table>
     </tr>

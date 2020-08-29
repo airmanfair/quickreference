@@ -37,6 +37,7 @@
             </tr>
             <tr>
                 <td markdown="block">
+                    
 {% highlight python %}
 def insertion_sort(ary):
     if len(ary) < 2: return
@@ -46,6 +47,7 @@ def insertion_sort(ary):
             ary[j+1], j = ary[j], j - 1
         ary[j+1] = key
 {% endhighlight %}
+                    
             </td></tr>
         </table>
     </tr>
