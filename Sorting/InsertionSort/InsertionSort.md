@@ -36,7 +36,7 @@
                 <td><strong>Python Implementation</strong></td>
             </tr>
             <tr>
-                <td>
+                <td markdown="block">
                     
 {% highlight python %}
 def insertion_sort(ary):
