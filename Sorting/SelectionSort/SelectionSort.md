@@ -48,8 +48,7 @@ def selection_sort(ary):
             if ary[j] < ary[i_min]:
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
-{% endhighlight %}
-                                   
+{% endhighlight %}                                 
 >
 
 <td markdown="block">
