@@ -1,5 +1,4 @@
 # Selection Sort
-
 <table>
     <tr>
         <table>
@@ -11,7 +10,7 @@
                 <td><strong><i>Space</i></strong></td>
             </tr>
             <tr>
-                <td><a href="/Sorting/">Sorting</a></td>
+                <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
                 <td>In-place</td>
                 <td>Naive</td>
                 <td><i>O</i>(n<sup>2</sup>)</td>
@@ -35,6 +34,7 @@
         <table>
             <tr style="text-align: center; font-size:20px;">
                 <td><strong><i>Python Implementation</i></strong></td>
+                <td><strong><i>Java Implementation</i></strong></td>
             </tr>
             <tr>
                 <td markdown="block">
@@ -49,8 +49,8 @@ def selection_sort(ary):
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
 {% endhighlight %}
-                                   
-                <td markdown="block">
+                                                                     
+<td markdown="block">
     
 {% highlight java %}
 static void selection_sort(int[] ary) {
