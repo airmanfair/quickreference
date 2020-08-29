@@ -49,7 +49,8 @@ def selection_sort(ary):
                 i_min = j
         ary[i], ary[i_min] = ary[i_min], ary[i]
 {% endhighlight %}
-                                                                     
+</td>
+
 <td markdown="block">
     
 {% highlight java %}
@@ -67,3 +68,8 @@ static void selection_sort(int[] ary) {
     }
 }
 {% endhighlight %}
+                                    </td>
+            </tr>
+        </table>
+    </tr>
+    </table>
