@@ -31,7 +31,7 @@
                     <td><i>O</i>(1)</td>
                 </tr>
                 <tr>
-                    <td><a href="/quickreference/Sorting/BubbleSort/BubbleSort">Selection Sort</a></td>
+                    <td><a href="/quickreference/Sorting/BubbleSort/BubbleSort">Bubble Sort</a></td>
                     <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
                     <td>In-place</td>
                     <td>Naive</td>
