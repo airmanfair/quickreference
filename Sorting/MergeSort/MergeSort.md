@@ -43,7 +43,8 @@
 def merge_sort(ary):
     
     def merge(start, mid, end):
-        left, right = ary[start:mid+1] + [float('inf')], ary[mid+1:end+1] + [float('inf')]
+        left = ary[start:mid+1] + [float('inf')] 
+        right = ary[mid+1:end+1] + [float('inf')]
         i, j = 0, 0
         for k in range(start, end+1):
             if left[i] <= right[j]:
