@@ -25,5 +25,12 @@
             <td><i>O</i>(n<sup>2</sup>)</td>
             <td><i>O</i>(1)</td>
         </tr>
+        <tr>
+            <td><a href="/Sorting/BubbleSort/">Bubble Sort</a></td>
+            <td>In-place</td>
+            <td>Naive</td>
+            <td><i>O</i>(n<sup>2</sup>)</td>
+            <td><i>O</i>(1)</td>
+        </tr>
     </table>
 </body>
