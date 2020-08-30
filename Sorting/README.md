@@ -32,5 +32,12 @@
             <td><i>O</i>(n<sup>2</sup>)</td>
             <td><i>O</i>(1)</td>
         </tr>
+        <tr>
+            <td><a href="/quickreference/Sorting/MergeSort/MergeSort">Merge Sort</a></td>
+            <td>Divide & Conquer</td>
+            <td>Efficient</td>
+            <td><i>O</i>(n log n)</td>
+            <td><i>O</i>(n)</td>
+        </tr>
     </table>
 </body>

@@ -48,12 +48,12 @@
                     <td><i>O</i>(1)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/quickreference/Sorting/MergeSort/MergeSort">Merge Sort</a></td>
+                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td>Divide & Conquer</td>
+                    <td>Efficient</td>
+                    <td><i>O</i>(n log n)</td>
+                    <td><i>O</i>(n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

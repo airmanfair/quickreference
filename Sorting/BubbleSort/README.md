@@ -26,7 +26,7 @@
             </tr>
             <tr>
                 <td><img src="BubbleSort.gif" alt="Bubble Sort GIF" width="525" height="315"/></td>
-                <td><a href="https://youtu.be/xli_FI7CuzA"><img src="http://img.youtube.com/vi/xli_FI7CuzA/0.jpg" alt="Insertion Sort Video" width="560" height="315"/></a></td>
+                <td><a href="https://youtu.be/xli_FI7CuzA"><img src="http://img.youtube.com/vi/xli_FI7CuzA/0.jpg" alt="Bubble Sort Video" width="560" height="315"/></a></td>
             </tr>
         </table>
     </tr>
