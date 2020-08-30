@@ -42,23 +42,22 @@
 {% highlight python %}
 def bubble_sort(ary):
     n = len(ary)
-    for i in range(n):
-        for j in range(n-1, i, -1):
-            if ary[j] < ary[j-1]:
-                ary[j], ary[j-1] = ary[j-1], ary[j]
+    for i in range(n-1, 0, -1):
+        for j in range(i):
+            if ary[j] > ary[j+1]:
+                ary[j], ary[j+1] = ary[j+1], ary[j]
 {% endhighlight %}
->
                     
 <td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
 static void bubble_sort(int[] ary) {
-    for (var i = 0; i < ary.length; i++) {
-        for (var j = ary.length-1; j > i; j--) {
-            if (ary[j] < ary[j-1]) {
+    for (var i = ary.length-1; i > 0; i--) {
+        for (var j = 0; j < i; j++) {
+            if (ary[j] > ary[j+1]) {
                 int temp = ary[j];
-                ary[j] = ary[j-1];
-                ary[j-1] = temp;
+                ary[j] = ary[j+1];
+                ary[j+1] = temp;
             }
         }
     }

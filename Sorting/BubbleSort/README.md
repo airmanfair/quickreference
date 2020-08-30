@@ -45,12 +45,12 @@ def bubble_sort(ary):
 # Java Implementation
 ``` java
 static void bubble_sort(int[] ary) {
-    for (var i = 0; i < ary.length; i++) {
-        for (var j = ary.length-1; j > i; j--) {
-            if (ary[j] < ary[j-1]) {
+    for (var i = ary.length-1; i > 0; i--) {
+        for (var j = 0; j < i; j++) {
+            if (ary[j] > ary[j+1]) {
                 int temp = ary[j];
-                ary[j] = ary[j-1];
-                ary[j-1] = temp;
+                ary[j] = ary[j+1];
+                ary[j+1] = temp;
             }
         }
     }
