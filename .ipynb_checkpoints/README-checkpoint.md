@@ -203,16 +203,22 @@
         <td>
             <table>
                 <tr>
+                    <td><strong><i>O-Notation Definition</i></strong></td>
+                </tr>
+                <tr>
+                    <td><i>f</i>(n) = <i>O</i>(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                </tr>
+                <tr>
                     <td><strong><i>Θ-Notation Definition</i></strong></td>
                 </tr>
                 <tr>
-                    <td><strong><i>f</i>(n) = <i>O</i>(<i>g</i>(n))</strong> ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td><i>f</i>(n) = Θ(<i>g</i>(n)) ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
                 </tr>
                 <tr>
-                    <td><strong><i>f</i>(n) = Θ(<i>g</i>(n))</strong> ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td><strong><i>Ω-Notation Definition</i></strong></td>
                 </tr>
                 <tr>
-                    <td><strong><i>f</i>(n) = Ω(<i>g</i>(n))</strong> ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
                 </tr>
                 <tr>
                     <td><strong><i>Name</i></strong></td>
