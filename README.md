@@ -208,13 +208,6 @@
                 <tr>
                     <td>f(n) = Θ(g(n)) \Rightarrow \exists</td>
                 </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>
-            <table>
                 <tr>
                     <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Complexity</i></strong></td>
