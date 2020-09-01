@@ -228,7 +228,7 @@
     </tr>
     <tr>
         <td>
-            <table style="width: 100vw">
+            <table style="width: 100%">
                 <tr>
                     <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Complexity</i></strong></td>
