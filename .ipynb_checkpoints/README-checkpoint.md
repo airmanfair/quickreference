@@ -199,7 +199,7 @@
                     <td>&nbsp;</td>
                 </tr>
             </table>
-        </td>
+        </th>
         <td>
             <table>
                 <tr>
@@ -228,7 +228,7 @@
     </tr>
     <tr>
         <td>
-            <table>
+            <table style="width: 100vw">
                 <tr>
                     <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Complexity</i></strong></td>
