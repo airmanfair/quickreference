@@ -7,7 +7,7 @@
         <td>
             <table>
                 <tr>
-                    <td><strong><i>NameΘ</i></strong></td>
+                    <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Class</i></strong></td>
                     <td><strong><i>Type</i></strong></td>
                     <td><strong><i>Category</i></strong></td>
@@ -200,6 +200,19 @@
                 </tr>
             </table>
         </td>
+        <td>
+            <table>
+                <tr>
+                    <td><strong><i>Θ Definition</i></strong></td>
+                </tr>
+                <tr>
+                    <td>f(n) = Θ(g(n)) \Rightarrow \exists</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
         <td>
             <table>
                 <tr>
