@@ -203,10 +203,10 @@
         <td>
             <table>
                 <tr>
-                    <td><strong><i>Θ Definition</i></strong></td>
+                    <td><strong><i>Θ-Notation Definition</i></strong></td>
                 </tr>
                 <tr>
-                    <td>f(n) = Θ(g(n)) \Rightarrow \exists</td>
+                    <td><i>f</i>(<i>n</i>) = Θ(<i>g</i>(<i>n</i>)) ⇒ ∃ <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub>, <i>n</i><sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>c</i><sub>1</sub><i>g</i>(<i>n</i>) ≤ <i>f</i>(<i>n</i>) ≤ <i>c</i><sub>2</sub><i>g</i>(<i>n</i>) ∀ <i>n</i> ≥ <i>n</i><sub>0</sub></td>
                 </tr>
                 <tr>
                     <td><strong><i>Name</i></strong></td>
