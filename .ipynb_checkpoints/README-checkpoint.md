@@ -7,7 +7,7 @@
         <td>
             <table>
                 <tr>
-                    <td><strong><i>Name&Theta</i></strong></td>
+                    <td><strong><i>NameΘ</i></strong></td>
                     <td><strong><i>Class</i></strong></td>
                     <td><strong><i>Type</i></strong></td>
                     <td><strong><i>Category</i></strong></td>
