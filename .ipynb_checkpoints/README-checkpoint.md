@@ -224,11 +224,9 @@
         </td>
     </tr>
     <tr>
-        <td></td>
         <td><strong>Runtime Order</strong></td>
     </tr>
     <tr>
-        <td></td>
         <td>
             <table>
                 <tr>
