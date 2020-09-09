@@ -203,6 +203,13 @@
         <td>
             <table style="width:100%">
                 <tr>
+                    <td colspan="2"><strong><i>Master Theorem</i></strong></td>
+                </tr>
+                <tr>
+                    <td colspan="1"><img src="/images/master_theorem_1.png" alt="Master Theorem 1"></td>
+                    <td colspan="1"><img src="/images/master_theorem_2.png" alt="Master Theorem 2"></td>
+                </tr>
+                <tr>
                     <td colspan="2"><strong><i>O-Notation</i></strong></td>
                 </tr>
                 <tr>
