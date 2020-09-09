@@ -237,7 +237,7 @@
                     <td colspan="2">m &lt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
                 </tr>
                 <tr>
-                    <td><strong><i>Log Conversions</i></strong></td>
+                    <td colspan="4"><strong><i>Log Conversions</i></strong></td>
                 </tr>
                 <tr>
                     <td>a = b<sup>log<sub>b</sub>a</sup></td>
