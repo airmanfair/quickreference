@@ -4,7 +4,7 @@
         <td><strong>Definitions</strong></td>	
     </tr>
     <tr>
-        <th rowspan="4">
+        <th rowspan="5">
             <table>
                 <tr>
                     <td><strong><i>Name</i></strong></td>
