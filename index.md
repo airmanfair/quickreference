@@ -1,7 +1,7 @@
 <table style="width:100%">
     <tr style="text-align: center; font-size:20px;">
         <td><strong>Algorithms</strong></td>
-        <td><strong>Definitions</strong></td>	
+        <td><strong>Complexity Analysis</strong></td>	
     </tr>
     <tr>
         <th rowspan="9">
