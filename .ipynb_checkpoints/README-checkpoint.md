@@ -202,26 +202,24 @@
         </th>
         <td>
             <table>
-                <th colspan="2">
-                    <tr>
-                        <td><strong><i>O-Notation</i></strong></td>
-                    </tr>
-                    <tr>
-                        <td><i>f</i>(n) = <i>O</i>(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
-                    </tr>
-                    <tr>
-                        <td><strong><i>Θ-Notation</i></strong></td>
-                    </tr>
-                    <tr>
-                        <td><i>f</i>(n) = Θ(<i>g</i>(n)) ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
-                    </tr>
-                    <tr>
-                        <td><strong><i>Ω-Notation</i></strong></td>
-                    </tr>
-                    <tr>
-                        <td><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
-                    </tr>
-                </th>
+                <tr>
+                    <td colspan="2"><strong><i>O-Notation</i></strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><i>f</i>(n) = <i>O</i>(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong><i>Θ-Notation</i></strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><i>f</i>(n) = Θ(<i>g</i>(n)) ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong><i>Ω-Notation</i></strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                </tr>
                 <tr>
                     <td><strong><i>Monotonically Increasing</i></strong></td>
                     <td><strong><i>Monotonically Decreasing</i></strong></td>
@@ -232,15 +230,11 @@
                 </tr>
                 <tr>
                     <td><strong><i>Strictly Increasing</i></strong></td>
-                </tr>
-                <tr>
-                    <td>m &lt; n ⇒ <i>f</i>(m) &lt; <i>f</i>(n)</td>
-                </tr>
-                <tr>
                     <td><strong><i>Strictly Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td>m &gt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
+                    <td>m &lt; n ⇒ <i>f</i>(m) &lt; <i>f</i>(n)</td>
+                    <td>m &lt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
                 </tr>
             </table>
         </td>
