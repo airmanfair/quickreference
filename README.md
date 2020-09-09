@@ -270,7 +270,7 @@
         <td>
             <table style="width:100%;">
                 <tr>
-                    <td>&sum;<sup>n</sup><sub>k=1</sub> k = (1/2)n(n+1)</td>
+                    <td>&sum;<sup>  n</sup><sub>k=1</sub> k = (1/2)n(n+1)</td>
                     <td>&sum;<sub>k=1</sub><sup>n</sup> k<sup>2</sup> = (1/6)n(n+1)(2n+1)</td>
                     <td>&sum;<sub>k=1</sub><sup>n</sup> k<sup>3</sup> = (1/4)n<sup>2</sup>(n+1)<sup>2</sup></td>
                 </tr>
