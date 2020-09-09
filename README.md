@@ -220,6 +220,30 @@
                 <tr>
                     <td><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
                 </tr>
+                <tr>
+                    <td><strong><i>Monotonically Increasing</i></strong></td>
+                </tr>
+                <tr>
+                    <td>m ≤ n ⇒ <i>f</i>(m) ≤ <i>f</i>(n)</td>
+                </tr>
+                <tr>
+                    <td><strong><i>Monotonically Decreasing</i></strong></td>
+                </tr>
+                <tr>
+                    <td>m ≤ n ⇒ <i>f</i>(m) ≥ <i>f</i>(n)</td>
+                </tr>
+                <tr>
+                    <td><strong><i>Strictly Increasing</i></strong></td>
+                </tr>
+                <tr>
+                    <td>m &lt; n ⇒ <i>f</i>(m) &lt; <i>f</i>(n)</td>
+                </tr>
+                <tr>
+                    <td><strong><i>Strictly Decreasing</i></strong></td>
+                </tr>
+                <tr>
+                    <td>m &gt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
+                </tr>
             </table>
         </td>
     </tr>
