@@ -252,7 +252,7 @@
                 </tr>
                 <tr>
                     <td><img src="/images/log_4.png" alt="log conversion 4"></td>
-                    <td><img src="/images/log_5.png" alt="log conversion 5"></td>
+                    <td><img src="/images/log_5_2.png" alt="log conversion 5"></td>
                     <td><img src="/images/log_6.png" alt="log conversion 6"></td>
                 </tr>
                 <tr>
