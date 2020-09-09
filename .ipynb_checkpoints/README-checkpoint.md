@@ -206,19 +206,19 @@
                     <td colspan="2"><strong><i>O-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/runtime_1.png" alt="O notation"></td>
+                    <td colspan="2"><img src="/images/runtime_1.png" alt="O notation"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Θ-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/runtime_2.png" alt="Theta notation"></td>
+                    <td colspan="2"><img src="/images/runtime_2.png" alt="Theta notation"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Ω-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/images/runtime_3.png" alt="Omega notation"></td>
+                    <td colspan="2"><img src="/images/runtime_3.png" alt="Omega notation"></td>
                 </tr>
                 <tr>
                     <td colspan="1"><strong><i>Monotonically Increasing</i></strong></td>
