@@ -275,14 +275,14 @@
                     <td><img src="/images/sum_k_3.png" alt="Sum from k=1 to n of k^3"></td>
                 </tr>
                 <tr>
-                    <td><MATH>&int;_a_^b^{f(x)<over>1+x</over>} dx</MATH></td>
-                    <td>&sum;<sub>k=1</sub><sup>n</sup> k<sup>2</sup> = (1/6)n(n+1)(2n+1)</td>
-                    <td>&sum;<sub>k=1</sub><sup>n</sup> k<sup>3</sup> = (1/4)n<sup>2</sup>(n+1)<sup>2</sup></td>
+                    <td><img src="/images/geometric.png" alt="Sum from k=0 to n of x^k"></td>
+                    <td><img src="/images/inf_decreasing_geo.png" alt="Sum from k=0 to infinity of x^k s.t. |x| < 1"></td>
+                    <td><img src="/images/harmonic_number.png" alt="Sum from k=1 to n of 1/k"></td>
                 </tr>
                 <tr>
-                    <td>&sum;<sub>k=1</sub><sup>n</sup> k = (1/2)n(n+1)</td>
-                    <td>&sum;<sub>k=1</sub><sup>n</sup> k<sup>2</sup> = (1/6)n(n+1)(2n+1)</td>
-                    <td>&sum;<sub>k=1</sub><sup>n</sup> k<sup>3</sup> = (1/4)n<sup>2</sup>(n+1)<sup>2</sup></td>
+                    <td><img src="/images/telescope_1.png" alt="telescoping series 1"></td>
+                    <td><img src="/images/telescope_2.png" alt="telescoping series 2"></td>
+                    <td><img src="/images/telescope_3.png" alt="telescoping series example"></td>
                 </tr>
             </table>
         </td>
