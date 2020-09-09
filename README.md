@@ -203,42 +203,47 @@
         <td>
             <table>
                 <tr>
-                    <td colspan="4"><strong><i>O-Notation</i></strong></td>
+                    <td colspan="2"><strong><i>O-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><i>f</i>(n) = <i>O</i>(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td colspan="2"><i>f</i>(n) = <i>O</i>(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><strong><i>Θ-Notation</i></strong></td>
+                    <td colspan="2"><strong><i>Θ-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><i>f</i>(n) = Θ(<i>g</i>(n)) ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td colspan="2"><i>f</i>(n) = Θ(<i>g</i>(n)) ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><strong><i>Ω-Notation</i></strong></td>
+                    <td colspan="2"><strong><i>Ω-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td colspan="2"><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><strong><i>Monotonically Increasing</i></strong></td>
-                    <td colspan="2"><strong><i>Monotonically Decreasing</i></strong></td>
+                    <td colspan="1"><strong><i>Monotonically Increasing</i></strong></td>
+                    <td colspan="1"><strong><i>Monotonically Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2">m ≤ n ⇒ <i>f</i>(m) ≤ <i>f</i>(n)</td>
-                    <td colspan="2">m ≤ n ⇒ <i>f</i>(m) ≥ <i>f</i>(n)</td>
+                    <td colspan="1">m ≤ n ⇒ <i>f</i>(m) ≤ <i>f</i>(n)</td>
+                    <td colspan="1">m ≤ n ⇒ <i>f</i>(m) ≥ <i>f</i>(n)</td>
                 </tr>
                 <tr>
-                    <td colspan="2"><strong><i>Strictly Increasing</i></strong></td>
-                    <td colspan="2"><strong><i>Strictly Decreasing</i></strong></td>
+                    <td colspan="1"><strong><i>Strictly Increasing</i></strong></td>
+                    <td colspan="1"><strong><i>Strictly Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2">m &lt; n ⇒ <i>f</i>(m) &lt; <i>f</i>(n)</td>
-                    <td colspan="2">m &lt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
+                    <td colspan="1">m &lt; n ⇒ <i>f</i>(m) &lt; <i>f</i>(n)</td>
+                    <td colspan="1">m &lt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
                 </tr>
-                <tr>
-                    <td colspan="4"><strong><i>Log Conversions</i></strong></td>
-                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><strong><i>Log Conversions</i></strong></td>
+    </tr>
+        <td>
+            <table style="width:100%;">
                 <tr>
                     <td>a = b<sup>log<sub>b</sub>a</sup></td>
                     <td>log<sub>c</sub>(ab) = log<sub>c</sub>a + log<sub>c</sub>b</td>
@@ -253,7 +258,6 @@
                 </tr>
             </table>
         </td>
-    </tr>
     <tr>
         <td><strong>Runtime Order</strong></td>
     </tr>
