@@ -247,7 +247,7 @@
         </td>
     </tr>
     <tr>
-        <td><strong><i>Logarithms</i></strong></td>
+        <td><strong>Logarithms</strong></td>
     </tr>
     <tr>
         <td>
@@ -271,7 +271,7 @@
         </td>
     </tr>
     <tr>
-        <td><strong><i>Summations</i></strong></td>
+        <td><strong>Summations</strong></td>
     </tr>
     <tr>
         <td>
@@ -295,7 +295,7 @@
         </td>
     </tr>
     <tr>
-        <td><strong><i>Sets</i></strong></td>
+        <td><strong>Sets</strong></td>
     </tr>
     <tr>
         <td>
@@ -336,7 +336,7 @@
         </td>
     </tr>
     <tr>
-        <td><strong><i>Runtime Order</i></strong></td>
+        <td><strong>Runtime Order</strong></td>
     </tr>
     <tr>
         <td>
