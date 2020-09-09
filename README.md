@@ -206,35 +206,35 @@
                     <td colspan="2"><strong><i>O-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><i>f</i>(n) = <i>O</i>(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ <i>f</i>(n) ≤ c<i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td><img src="/images/runtime_1.png" alt="O notation"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Θ-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><i>f</i>(n) = Θ(<i>g</i>(n)) ⇒ ∃ c<sub>1</sub>, c<sub>2</sub>, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<sub>1</sub><i>g</i>(n) ≤ <i>f</i>(n) ≤ c<sub>2</sub><i>g</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td><img src="/images/runtime_2.png" alt="Theta notation"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Ω-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><i>f</i>(n) = Ω(<i>g</i>(n)) ⇒ ∃ c, n<sub>0</sub> ∈ ℝ<sup>+</sup> s.t. 0 ≤ c<i>g</i>(n) ≤ <i>f</i>(n) ∀ n ≥ n<sub>0</sub></td>
+                    <td><img src="/images/runtime_3.png" alt="Omega notation"></td>
                 </tr>
                 <tr>
                     <td colspan="1"><strong><i>Monotonically Increasing</i></strong></td>
                     <td colspan="1"><strong><i>Monotonically Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="1">m ≤ n ⇒ <i>f</i>(m) ≤ <i>f</i>(n)</td>
-                    <td colspan="1">m ≤ n ⇒ <i>f</i>(m) ≥ <i>f</i>(n)</td>
+                    <td colspan="1"><img src="/images/mono_increase.png" alt="Monotonically Increasing"></td>
+                    <td colspan="1"><img src="/images/mono_decrease.png" alt="Monotonically Decreasing"></td>
                 </tr>
                 <tr>
                     <td colspan="1"><strong><i>Strictly Increasing</i></strong></td>
                     <td colspan="1"><strong><i>Strictly Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="1">m &lt; n ⇒ <i>f</i>(m) &lt; <i>f</i>(n)</td>
-                    <td colspan="1">m &lt; n ⇒ <i>f</i>(m) &gt; <i>f</i>(n)</td>
+                    <td colspan="1"><img src="/images/strict_increase.png" alt="Strictly Increasing"></td>
+                    <td colspan="1"><img src="/images/strict_decrease.png" alt="Strictly Decreasing"></td>
                 </tr>
             </table>
         </td>
