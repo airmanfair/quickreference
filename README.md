@@ -5,7 +5,7 @@
     </tr>
     <tr>
         <th rowspan="5">
-            <table>
+            <table style="width:100%">
                 <tr>
                     <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Class</i></strong></td>
@@ -201,7 +201,7 @@
             </table>
         </th>
         <td>
-            <table>
+            <table style="width:100%">
                 <tr>
                     <td colspan="2"><strong><i>O-Notation</i></strong></td>
                 </tr>
@@ -248,7 +248,7 @@
                     <td>a = b<sup>log<sub>b</sub>a</sup></td>
                     <td>log<sub>c</sub>(ab) = log<sub>c</sub>a + log<sub>c</sub>b</td>
                     <td>log<sub>c</sub>(a/b) = log<sub>c</sub>a - log<sub>c</sub>b</td>
-                    <td>log<sub>b</sub><sup>n</sup> = nlog<sub>b</sub>a</td>
+                    <td>log<sub>b</sub>a<sup>n</sup> = nlog<sub>b</sub>a</td>
                 </tr>
                 <tr>
                     <td>log<sub>b</sub>a = log<sub>c</sub>a/log<sub>c</sub>b</td>
