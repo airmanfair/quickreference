@@ -15,6 +15,14 @@ table {
     width: 100%;
 }
 
+table.contents td {
+    position: relative;
+}
+
+img {
+    position: absolute;
+}
+
 td img {
     max-width: 100%;
     width: auto;
