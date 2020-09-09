@@ -4,7 +4,7 @@
         <td><strong>Definitions</strong></td>	
     </tr>
     <tr>
-        <th rowspan="7">
+        <th rowspan="9">
             <table style="width:100%">
                 <tr>
                     <td><strong><i>Name</i></strong></td>
@@ -288,7 +288,48 @@
         </td>
     </tr>
     <tr>
-        <td><strong>Runtime Order</strong></td>
+        <td><strong><i>Sets</i></strong></td>
+    </tr>
+    <tr>
+        <td>
+            <table style="width:100%;">
+                <tr>
+                    <td colspan="2"><strong><i>Associative</i></strong></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/assoc_1.png" alt="Set Associative 1"></td>
+                    <td><img src="/images/assoc_2.png" alt="Set Associative 2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong><i>Distributive</i></strong></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/dist_1.png" alt="Set Distributive 1"></td>
+                    <td><img src="/images/dist_2.png" alt="Set Distributive 2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong><i>Absorption</i></strong></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/absorb_1.png" alt="Set Absorption 1"></td>
+                    <td><img src="/images/absorb_2.png" alt="Set Absorption 2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong><i>DeMorgan's</i></strong></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/demorgan_1.png" alt="Demorgan's Law 1"></td>
+                    <td><img src="/images/demorgan_2.png" alt="Demorgan's Law 2"></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/demorgan_3.png" alt="Demorgan's Law 3"></td>
+                    <td><img src="/images/demorgan_4.png" alt="Demorgan's Law 4"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><strong><i>Runtime Order</i></strong></td>
     </tr>
     <tr>
         <td>
