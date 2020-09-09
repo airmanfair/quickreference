@@ -15,12 +15,16 @@ table {
     width: 100%;
 }
 
+.markdown-body {
+    max-width: 80%;
+}
+
 table.contents td {
     position: relative;
 }
 
 img {
-    position: absolute;
+    position: relative;
 }
 
 td img {
