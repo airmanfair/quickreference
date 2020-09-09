@@ -518,42 +518,42 @@
                     <td colspan="2"><strong><i>Master Theorem</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="1"><img src="/quickreference/images/master_theorem_1.png" alt="Master Theorem 1"></td>
-                    <td colspan="1"><img src="/quickreference/images/master_theorem_2.png" alt="Master Theorem 2"></td>
+                    <td colspan="1"><img src="/quickreference/images/master_theorem_1.png" alt="Master Theorem 1" width="auto" height="auto"></td>
+                    <td colspan="1"><img src="/quickreference/images/master_theorem_2.png" alt="Master Theorem 2" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>O-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><img src="/quickreference/images/runtime_1.png" alt="O notation"></td>
+                    <td colspan="2"><img src="/quickreference/images/runtime_1.png" alt="O notation" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Θ-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><img src="/quickreference/images/runtime_2.png" alt="Theta notation"></td>
+                    <td colspan="2"><img src="/quickreference/images/runtime_2.png" alt="Theta notation" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Ω-Notation</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><img src="/quickreference/images/runtime_3.png" alt="Omega notation"></td>
+                    <td colspan="2"><img src="/quickreference/images/runtime_3.png" alt="Omega notation" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="1"><strong><i>Monotonically Increasing</i></strong></td>
                     <td colspan="1"><strong><i>Monotonically Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="1"><img src="/quickreference/images/mono_increase.png" alt="Monotonically Increasing"></td>
-                    <td colspan="1"><img src="/quickreference/images/mono_decrease.png" alt="Monotonically Decreasing"></td>
+                    <td colspan="1"><img src="/quickreference/images/mono_increase.png" alt="Monotonically Increasing" width="auto" height="auto"></td>
+                    <td colspan="1"><img src="/quickreference/images/mono_decrease.png" alt="Monotonically Decreasing" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="1"><strong><i>Strictly Increasing</i></strong></td>
                     <td colspan="1"><strong><i>Strictly Decreasing</i></strong></td>
                 </tr>
                 <tr>
-                    <td colspan="1"><img src="/quickreference/images/strict_increase.png" alt="Strictly Increasing"></td>
-                    <td colspan="1"><img src="/quickreference/images/strict_decrease.png" alt="Strictly Decreasing"></td>
+                    <td colspan="1"><img src="/quickreference/images/strict_increase.png" alt="Strictly Increasing" width="auto" height="auto"></td>
+                    <td colspan="1"><img src="/quickreference/images/strict_decrease.png" alt="Strictly Decreasing" width="auto" height="auto"></td>
                 </tr>
             </table>
         </td>
@@ -565,19 +565,19 @@
         <td>
             <table style="width:100%;">
                 <tr>
-                    <td><img src="/quickreference/images/log_1.png" alt="log conversion 1"></td>
-                    <td><img src="/quickreference/images/log_2.png" alt="log conversion 2"></td>
-                    <td><img src="/quickreference/images/log_3.png" alt="log conversion 3"></td>
+                    <td><img src="/quickreference/images/log_1.png" alt="log conversion 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/log_2.png" alt="log conversion 2" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/log_3.png" alt="log conversion 3" width="auto" height="auto"></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/log_4.png" alt="log conversion 4"></td>
-                    <td><img src="/quickreference/images/log_5_2.png" alt="log conversion 5"></td>
-                    <td><img src="/quickreference/images/log_6.png" alt="log conversion 6"></td>
+                    <td><img src="/quickreference/images/log_4.png" alt="log conversion 4" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/log_5_2.png" alt="log conversion 5" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/log_6.png" alt="log conversion 6" width="auto" height="auto"></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/log_7.png" alt="log conversion 7"></td>
-                    <td><img src="/quickreference/images/log_8.png" alt="log conversion 8"></td>
-                    <td><img src="/quickreference/images/log_9.png" alt="log conversion 9"></td>
+                    <td><img src="/quickreference/images/log_7.png" alt="log conversion 7" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/log_8.png" alt="log conversion 8" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/log_9.png" alt="log conversion 9" width="auto" height="auto"></td>
                 </tr>
             </table>
         </td>
@@ -589,19 +589,19 @@
         <td>
             <table style="width:100%;">
                 <tr>
-                    <td><img src="/quickreference/images/sum_k.png" alt="Sum from k=1 to n of k"></td>
-                    <td><img src="/quickreference/images/sum_k_2.png" alt="Sum from k=1 to n of k^2"></td>
-                    <td><img src="/quickreference/images/sum_k_3.png" alt="Sum from k=1 to n of k^3"></td>
+                    <td><img src="/quickreference/images/sum_k.png" alt="Sum from k=1 to n of k" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/sum_k_2.png" alt="Sum from k=1 to n of k^2" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/sum_k_3.png" alt="Sum from k=1 to n of k^3" width="auto" height="auto"></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/geometric.png" alt="Sum from k=0 to n of x^k"></td>
-                    <td><img src="/quickreference/images/inf_decreasing_geo.png" alt="Sum from k=0 to infinity of x^k s.t. |x| < 1"></td>
-                    <td><img src="/quickreference/images/harmonic_number.png" alt="Sum from k=1 to n of 1/k"></td>
+                    <td><img src="/quickreference/images/geometric.png" alt="Sum from k=0 to n of x^k" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/inf_decreasing_geo.png" alt="Sum from k=0 to infinity of x^k s.t. |x| < 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/harmonic_number.png" alt="Sum from k=1 to n of 1/k" width="auto" height="auto"></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/telescope_1.png" alt="telescoping series 1"></td>
-                    <td><img src="/quickreference/images/telescope_2.png" alt="telescoping series 2"></td>
-                    <td><img src="/quickreference/images/telescope_3.png" alt="telescoping series example"></td>
+                    <td><img src="/quickreference/images/telescope_1.png" alt="telescoping series 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/telescope_2.png" alt="telescoping series 2" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/telescope_3.png" alt="telescoping series example" width="auto" height="auto"></td>
                 </tr>
             </table>
         </td>
@@ -616,33 +616,33 @@
                     <td colspan="2"><strong><i>Associative</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/assoc_1.png" alt="Set Associative 1"></td>
-                    <td><img src="/quickreference/images/assoc_2.png" alt="Set Associative 2"></td>
+                    <td><img src="/quickreference/images/assoc_1.png" alt="Set Associative 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/assoc_2.png" alt="Set Associative 2" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Distributive</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/dist_1.png" alt="Set Distributive 1"></td>
-                    <td><img src="/quickreference/images/dist_2.png" alt="Set Distributive 2"></td>
+                    <td><img src="/quickreference/images/dist_1.png" alt="Set Distributive 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/dist_2.png" alt="Set Distributive 2" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>Absorption</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/absorb_1.png" alt="Set Absorption 1"></td>
-                    <td><img src="/quickreference/images/absorb_2.png" alt="Set Absorption 2"></td>
+                    <td><img src="/quickreference/images/absorb_1.png" alt="Set Absorption 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/absorb_2.png" alt="Set Absorption 2" width="auto" height="auto"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><strong><i>DeMorgan's</i></strong></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/demorgan_1.png" alt="Demorgan's Law 1"></td>
-                    <td><img src="/quickreference/images/demorgan_2.png" alt="Demorgan's Law 2"></td>
+                    <td><img src="/quickreference/images/demorgan_1.png" alt="Demorgan's Law 1" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/demorgan_2.png" alt="Demorgan's Law 2" width="auto" height="auto"></td>
                 </tr>
                 <tr>
-                    <td><img src="/quickreference/images/demorgan_3.png" alt="Demorgan's Law 3"></td>
-                    <td><img src="/quickreference/images/demorgan_4.png" alt="Demorgan's Law 4"></td>
+                    <td><img src="/quickreference/images/demorgan_3.png" alt="Demorgan's Law 3" width="auto" height="auto"></td>
+                    <td><img src="/quickreference/images/demorgan_4.png" alt="Demorgan's Law 4" width="auto" height="auto"></td>
                 </tr>
             </table>
         </td>
