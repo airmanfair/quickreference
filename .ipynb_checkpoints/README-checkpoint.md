@@ -246,7 +246,7 @@
         <td>
             <table style="width:100%;">
                 <tr>
-                    <td>a = b<sup>log<sub>b</sub>a</sup></td>
+                    <td><img src="/images/log_1.png" alt="log conversion 1"></td>
                     <td>log<sub>c</sub>(ab) = log<sub>c</sub>a + log<sub>c</sub>b</td>
                     <td>log<sub>c</sub>(a/b) = log<sub>c</sub>a - log<sub>c</sub>b</td>
                 </tr>
