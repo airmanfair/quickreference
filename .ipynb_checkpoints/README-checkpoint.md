@@ -4,7 +4,7 @@
         <td><strong>Definitions</strong></td>	
     </tr>
     <tr>
-        <th rowspan="5">
+        <th rowspan="7">
             <table style="width:100%">
                 <tr>
                     <td><strong><i>Name</i></strong></td>
@@ -240,8 +240,9 @@
         </td>
     </tr>
     <tr>
-        <td><strong><i>Log Conversions</i></strong></td>
+        <td><strong><i>Logarithms</i></strong></td>
     </tr>
+    <tr>
         <td>
             <table style="width:100%;">
                 <tr>
@@ -261,6 +262,7 @@
                 </tr>
             </table>
         </td>
+    </tr>
     <tr>
         <td><strong>Runtime Order</strong></td>
     </tr>
