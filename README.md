@@ -247,18 +247,18 @@
             <table style="width:100%;">
                 <tr>
                     <td><img src="/images/log_1.png" alt="log conversion 1"></td>
-                    <td>log<sub>c</sub>(ab) = log<sub>c</sub>a + log<sub>c</sub>b</td>
-                    <td>log<sub>c</sub>(a/b) = log<sub>c</sub>a - log<sub>c</sub>b</td>
+                    <td><img src="/images/log_2.png" alt="log conversion 2"></td>
+                    <td><img src="/images/log_3.png" alt="log conversion 3"></td>
                 </tr>
                 <tr>
-                    <td>log<sub>b</sub>a<sup>n</sup> = nlog<sub>b</sub>a</td>
-                    <td>log<sub>b</sub>a = log<sub>c</sub>a/log<sub>c</sub>b</td>
-                    <td>log<sub>b</sub>(1/a) = -log<sub>b</sub>a</td>
+                    <td><img src="/images/log_4.png" alt="log conversion 4"></td>
+                    <td><img src="/images/log_5.png" alt="log conversion 5"></td>
+                    <td><img src="/images/log_6.png" alt="log conversion 6"></td>
                 </tr>
                 <tr>
-                    <td>log<sup>*</sup>n = min{i ≥ 0: log<sup>(i)</sup>n ≤ 1}</td>
-                    <td>log<sub>b</sub>a = 1/log<sub>a</sub>b</td>
-                    <td>a<sup>log<sub>b</sub>c</sup> = c<sup>log<sub>b</sub>a</sup></td>
+                    <td><img src="/images/log_7.png" alt="log conversion 7"></td>
+                    <td><img src="/images/log_8.png" alt="log conversion 8"></td>
+                    <td><img src="/images/log_9.png" alt="log conversion 9"></td>
                 </tr>
             </table>
         </td>
