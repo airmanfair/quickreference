@@ -248,11 +248,14 @@
                     <td>a = b<sup>log<sub>b</sub>a</sup></td>
                     <td>log<sub>c</sub>(ab) = log<sub>c</sub>a + log<sub>c</sub>b</td>
                     <td>log<sub>c</sub>(a/b) = log<sub>c</sub>a - log<sub>c</sub>b</td>
-                    <td>log<sub>b</sub>a<sup>n</sup> = nlog<sub>b</sub>a</td>
                 </tr>
                 <tr>
+                    <td>log<sub>b</sub>a<sup>n</sup> = nlog<sub>b</sub>a</td>
                     <td>log<sub>b</sub>a = log<sub>c</sub>a/log<sub>c</sub>b</td>
                     <td>log<sub>b</sub>(1/a) = -log<sub>b</sub>a</td>
+                </tr>
+                <tr>
+                    <td>log<sup>*</sup>n = min{i ≥ 0: log<sup>(i)</sup>n ≤ 1}</td>
                     <td>log<sub>b</sub>a = 1/log<sub>a</sub>b</td>
                     <td>a<sup>log<sub>b</sub>c</sup> = c<sup>log<sub>b</sub>a</sup></td>
                 </tr>
