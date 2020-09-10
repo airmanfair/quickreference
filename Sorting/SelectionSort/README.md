@@ -49,7 +49,7 @@ def selection_sort(ary):
 # Java Implementation
 ``` java
 static void selection_sort(int[] ary) {
-    for (var i = 0; i < ary.length; i++) {
+    for (int i = 0; i < ary.length; i++) {
         int i_min = i;
         for (int j = i+1; j < ary.length; j++) {
             if (ary[j] < ary[i_min]) {

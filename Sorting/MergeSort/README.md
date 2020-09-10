@@ -63,15 +63,15 @@ def merge_sort(ary):
 static void merge(int[] ary, int start, int mid, int end) {
     int n = mid - start + 1, m = end - mid;
     int[] left = new int[n+1], right = new int[m+1];
-    for (var i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         left[i] = ary[i+start];
     }
-    for (var i = 0; i < m; i++) {
+    for (int i = 0; i < m; i++) {
         right[i] = ary[i+mid+1];
     }
     left[n] = right[m] = Integer.MAX_VALUE;
     int i = 0, j = 0;
-    for (var k = start; k <= end; k++) {
+    for (int k = start; k <= end; k++) {
         if (left[i] <= right[j]) {
           ary[k] = left[i++];
         } else {

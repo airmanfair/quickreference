@@ -1,4 +1,4 @@
-# Merge Sort
+# Heap Sort
 <table>
     <tr>
         <table>
@@ -42,61 +42,77 @@
                 <td class="code" markdown="block" style="vertical-align: top;">
                     
 {% highlight python %}
-def merge_sort(ary):
+class MaxHeap:
     
-    def merge(start, mid, end):
-        left = ary[start:mid+1] + [float('inf')] 
-        right = ary[mid+1:end+1] + [float('inf')]
-        i, j = 0, 0
-        for k in range(start, end+1):
-            if left[i] <= right[j]:
-                ary[k], i = left[i], i + 1
-            else:
-                ary[k], j = right[j], j + 1
-    
-    def sort(start, end):
-        if start < end:
-            mid = (start+end)//2
-            sort(start, mid)
-            sort(mid+1, end)
-            merge(start, mid, end)
-    
-    sort(0, len(ary)-1)
+    def __init__(self, ary):
+        self.ary = ary
+        self.heap_size = len(ary)
+        for i in range(self.heap_size//2 - 1, -1, -1):
+            self.heapify(i)
+      
+    def heapify(self, i):
+        left, right  = i*2 + 1, i*2 + 2
+        if left < self.heap_size and self.ary[left] > self.ary[i]:
+            largest = left
+        else:
+            largest = i
+        if right < self.heap_size and self.ary[right] > self.ary[largest]:
+            largest = right
+        if largest != i:
+            self.ary[i], self.ary[largest] = self.ary[largest], self.ary[i]
+            self.heapify(largest)
+        
+def heap_sort(ary):
+    h = MaxHeap(ary)
+    for i in range(h.heap_size - 1, 0, -1):
+        h.ary[0], h.ary[i] = h.ary[i], h.ary[0]
+        h.heap_size -= 1
+        h.heapify(0)
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
-static void merge(int[] ary, int start, int mid, int end) {
-    int n = mid - start + 1, m = end - mid;
-    int[] left = new int[n+1], right = new int[m+1];
-    for (var i = 0; i < n; i++) {
-        left[i] = ary[i+start];
+class MaxHeap {
+    
+    public int[] ary;
+    public int heap_size;
+
+    public MaxHeap(int[] ary) {
+        this.ary = ary;
+        this.heap_size = this.ary.length;
+        for (int i = this.heap_size/2 - 1; i >= 0; i--) {
+            this.heapify(i);
+        }
     }
-    for (var i = 0; i < m; i++) {
-        right[i] = ary[i+mid+1];
-    }
-    left[n] = right[m] = Integer.MAX_VALUE;
-    int i = 0, j = 0;
-    for (var k = start; k <= end; k++) {
-        if (left[i] <= right[j]) {
-          ary[k] = left[i++];
+
+    public void heapify(int i) {
+        int left = i*2 + 1, right = i*2 + 2, largest = 0;
+        if (left < this.heap_size && this.ary[left] > this.ary[i]) {
+            largest = left;
         } else {
-            ary[k] = right[j++];
+            largest = i;
+        }
+        if (right < this.heap_size && this.ary[right] > this.ary[largest]) {
+            largest = right;
+        }
+        if (largest != i) {
+            int temp = this.ary[i];
+            this.ary[i] = this.ary[largest];
+            this.ary[largest] = temp;
+            this.heapify(largest);
         }
     }
 }
-
-static void sort(int[] ary, int start, int end) {
-    if (start < end) {
-        int mid = (start + end) / 2;
-        sort(ary, start, mid);
-        sort(ary, mid+1, end);
-        merge(ary, start, mid, end);
+    
+static void heap_sort(int[] ary) {
+    MaxHeap h = new MaxHeap(ary);
+    for (int i = h.heap_size - 1; i > 0; i--) {
+        int temp = h.ary[0];
+        h.ary[0] = h.ary[i];
+        h.ary[i] = temp;
+        h.heap_size -= 1;
+        h.heapify(0);
     }
-}
-
-static void merge_sort(int[] ary) {
-    sort(ary, 0, ary.length-1);
 }
 {% endhighlight %}
