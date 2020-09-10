@@ -6,15 +6,17 @@
                 <td><strong><i>Class</i></strong></td>
                 <td><strong><i>Type</i></strong></td>
                 <td><strong><i>Category</i></strong></td>
-                <td><strong><i>Time</i></strong></td>
                 <td><strong><i>Space</i></strong></td>
+                <td><strong><i>Time</i></strong></td>
+                <td><strong><i>Average</i></strong></td>
             </tr>
             <tr>
                 <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
                 <td>In-place</td>
                 <td>Naive</td>
-                <td><i>O</i>(n<sup>2</sup>)</td>
                 <td><i>O</i>(1)</td>
+                <td><i>O</i>(n<sup>2</sup>)</td>
+                <td><i>Θ</i>(n<sup>2</sup>)</td>
             </tr>
         </table>
     </tr>
