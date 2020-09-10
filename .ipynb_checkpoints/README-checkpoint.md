@@ -1,11 +1,11 @@
-<table style="width:100%">
+<table>
     <tr style="text-align: center; font-size:20px;">
         <td><strong>Algorithms</strong></td>
         <td><strong>Complexity Analysis</strong></td>	
     </tr>
     <tr>
         <th rowspan="9">
-            <table style="width:100%">
+            <table>
                 <tr>
                     <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Class</i></strong></td>
@@ -16,8 +16,8 @@
                     <td><strong><i>Time: Average</i></strong></td>
                 </tr>
                 <tr>
-                    <td><a href="/quickreference/Sorting/InsertionSort/InsertionSort">Insertion Sort</a></td>
-                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td><a href="/Sorting/InsertionSort/">Insertion Sort</a></td>
+                    <td><a href="/Sorting/">Sorting</a></td>
                     <td>In-place</td>
                     <td>Naive</td>
                     <td><i>O</i>(1)</td>
@@ -25,8 +25,8 @@
                     <td><i>O</i>(n<sup>2</sup>)</td>
                 </tr>
                 <tr>
-                    <td><a href="/quickreference/Sorting/SelectionSort/SelectionSort">Selection Sort</a></td>
-                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td><a href="/Sorting/SelectionSort/">Selection Sort</a></td>
+                    <td><a href="/Sorting/">Sorting</a></td>
                     <td>In-place</td>
                     <td>Naive</td>
                     <td><i>O</i>(1)</td>
@@ -34,8 +34,8 @@
                     <td><i>O</i>(n<sup>2</sup>)</td>
                 </tr>
                 <tr>
-                    <td><a href="/quickreference/Sorting/BubbleSort/BubbleSort">Bubble Sort</a></td>
-                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td><a href="/Sorting/BubbleSort/">Bubble Sort</a></td>
+                    <td><a href="/Sorting/">Sorting</a></td>
                     <td>In-place</td>
                     <td>Naive</td>
                     <td><i>O</i>(1)</td>
@@ -43,8 +43,8 @@
                     <td><i>O</i>(n<sup>2</sup>)</td>
                 </tr>
                 <tr>
-                    <td><a href="/quickreference/Sorting/MergeSort/MergeSort">Merge Sort</a></td>
-                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td><a href="/Sorting/MergeSort/">Merge Sort</a></td>
+                    <td><a href="/Sorting/Sorting">Sorting</a></td>
                     <td>Divide & Conquer</td>
                     <td>Efficient</td>
                     <td><i>O</i>(n)</td>
@@ -52,13 +52,13 @@
                     <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/Sorting/HeapSort/">Heap Sort</a></td>
+                    <td><a href="/Sorting/Sorting">Sorting</a></td>
+                    <td>In-place</td>
+                    <td>Efficient</td>
+                    <td><i>O</i>(1)</td>
+                    <td><i>O</i>(n log n)</td>
+                    <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
@@ -617,7 +617,7 @@
     </tr>
     <tr>
         <td>
-            <table style="width:100%;">
+            <table>
                 <tr>
                     <td><img src="/images/log_1.png" alt="log conversion 1"></td>
                     <td><img src="/images/log_2.png" alt="log conversion 2"></td>
@@ -641,7 +641,7 @@
     </tr>
     <tr>
         <td>
-            <table style="width:100%;">
+            <table>
                 <tr>
                     <td><img src="/images/sum_k.png" alt="Sum from k=1 to n of k"></td>
                     <td><img src="/images/sum_k_2.png" alt="Sum from k=1 to n of k^2"></td>
@@ -665,7 +665,7 @@
     </tr>
     <tr>
         <td>
-            <table style="width:100%;">
+            <table>
                 <tr>
                     <td colspan="2"><strong><i>Associative</i></strong></td>
                 </tr>
@@ -706,7 +706,7 @@
     </tr>
     <tr>
         <td>
-            <table style="width:100%;">
+            <table>
                 <tr>
                     <td><strong><i>Name</i></strong></td>
                     <td><strong><i>Complexity</i></strong></td>

@@ -40,4 +40,12 @@
         <td><i>O</i>(n log n)</td>
         <td><i>Θ</i>(n log n)</td>
     </tr>
+    <tr>
+        <td><a href="/quickreference/Sorting/HeapSort/HeapSort">Heap Sort</a></td>
+        <td>In-place</td>
+        <td>Efficient</td>
+        <td><i>O</i>(1)</td>
+        <td><i>O</i>(n log n)</td>
+        <td><i>O</i>(n log n)</td>
+    </tr>
 </table>

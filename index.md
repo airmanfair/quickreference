@@ -52,13 +52,13 @@
                     <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/quickreference/Sorting/HeapSort/HeapSort">Heap Sort</a></td>
+                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td>In-place</td>
+                    <td>Efficient</td>
+                    <td><i>O</i>(1)</td>
+                    <td><i>O</i>(n log n)</td>
+                    <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
