@@ -1,54 +1,47 @@
-# Heap Sort
+# Heap
 <table>
     <tr>
         <table>
             <tr>
-                <td><strong><i>Class</i></strong></td>
-                <td><strong><i>Type</i></strong></td>
-                <td><strong><i>Category</i></strong></td>
+                <td><strong><i>Insert</i></strong></td>
+                <td><strong><i>Delete</i></strong></td>
+                <td><strong><i>Balance</i></strong></td>
+                <td><strong><i>Get at Index</i></strong></td>
+                <td><strong><i>Search</i></strong></td>
+                <td><strong><i>Minimum</i></strong></td>
+                <td><strong><i>Maximum</i></strong></td>
                 <td><strong><i>Space</i></strong></td>
-                <td><strong><i>Time: Worst</i></strong></td>
-                <td><strong><i>Time: Average</i></strong></td>
             </tr>
             <tr>
-                <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
-                <td>In-place</td>
-                <td>Efficient</td>
-                <td><i>O</i>(1)</td>
-                <td><i>O</i>(n log n)</td>
-                <td><i>O</i>(n log n)</td>
+                <td><i>O</i>(log n)</td>
+                <td><i>O</i>(log n)</td>
+                <td><i>O</i>(log n)</td>
+                <td>NA</td>
+                <td><i>O</i>(n)</td>
+                <td><i>O</i>(1) for MinHeap, <i>O</i>(n) for MaxHeap</td>
+                <td><i>O</i>(1) for MaxHeap, <i>O</i>(n) for MinHeap</td>
+                <td><i>O</i>(n)</td>
             </tr>
         </table>
     </tr>
     <tr>
         <table>
             <tr style="text-align: center; font-size:20px;">
-                <td><strong><i>GIF</i></strong></td>
-                <td><strong><i>Video</i></strong></td>
+                <td><strong><i>Python Implementation (max)</i></strong></td>
+                <td><strong><i>Java Implementation (max)</i></strong></td>
             </tr>
             <tr>
-                <td><img src="HeapSort.gif" alt="Heap Sort GIF" width="342" height="315"/></td>
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/2DmK_H7IdTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            </tr>
-        </table>
-    </tr>
-    <tr>
-        <table>
-            <tr style="text-align: center; font-size:20px;">
-                <td><strong><i>Python Implementation</i></strong></td>
-                <td><strong><i>Java Implementation</i></strong></td>
-            </tr>
-            <tr>
-                <td class="code" markdown="block" style="vertical-align: top;">
-                    
+                <td class="code" markdown="block" style="vertical-align: top;">       
 {% highlight python %}
+import math
+
 class MaxHeap:
     
     def __init__(self, ary):
         self.ary, self.heap_size = ary, len(ary)
         for i in range(self.heap_size//2 - 1, -1, -1):
             self.heapify(i)
-      
+    
     def heapify(self, i):
         left, right  = i*2 + 1, i*2 + 2
         if left < self.heap_size and self.ary[left] > self.ary[i]:
@@ -60,58 +53,106 @@ class MaxHeap:
         if largest != i:
             self.ary[i], self.ary[largest] = self.ary[largest], self.ary[i]
             self.heapify(largest)
-        
-def heap_sort(ary):
-    h = MaxHeap(ary)
-    for i in range(h.heap_size - 1, 0, -1):
-        h.ary[0], h.ary[i] = h.ary[i], h.ary[0]
-        h.heap_size -= 1
-        h.heapify(0)
+            
+    def maximum(self):
+        return self.ary[0]
+    
+    def extract_max(self):
+        if self.heap_size < 1:
+            raise Exception("You are attempting to return the maximum of an empty heap.")
+        maximum, self.ary[0] = self.ary[0], self.ary[self.heap_size-1]
+        self.heap_size -= 1
+        self.heapify(0)
+        return maximum
+    
+    def increase_key(self, i, key):
+        if key < self.ary[i]:
+            raise Exception("You are attempting to increase the key at index " + str(i) + " with a smaller key value.")
+        self.ary[i], parent = key, (i - 1) // 2
+        while i > 0 and self.ary[parent] < self.ary[i]:
+            self.ary[i], self.ary[parent], i, parent = self.ary[parent], self.ary[i], parent, (parent - 1) // 2
+    
+    def insert(self, key):
+        self.ary.append(float("-inf"))
+        self.heap_size += 1
+        self.increase_key(self.heap_size - 1, key)
+    
+    def __str__(self):
+        # Works when heap elements can be represented by a single character. Breaks for any heap element of len(str(elem)) > 1.
+        i, j, u, s, b, ret = 2**int(math.log(self.heap_size, 2)) - 1, self.heap_size, 0, 0, 1, ""
+        while i > 0:
+            to_add = s*" " + u*"_" + ("_"*u + (b-u*2)*" " + "_"*u).join([str(e) for e in self.ary[i:j]]) + u*"_" + s*" " + "\n"
+            slashes = (s + u)*" " + (b*" ").join(["/" if x % 2 else "\\" for x in range(i, j)]) + (s + u)*" " + "\n"
+            u, j = s + u, i
+            ret, s = slashes + to_add + ret, u + 1
+            b, i = (s + u)*2 + 1, i//2
+        return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret
 {% endhighlight %}
-
-<td class="code" markdown="block" style="vertical-align: top;">
-    
+                <td class="code" markdown="block" style="vertical-align: top;">
 {% highlight java %}
-class MaxHeap {
-    
-    public int[] ary;
-    public int heap_size;
+{% endhighlight %}
+            <tr style="text-align: center; font-size:20px;">
+                <td><strong><i>Python Implementation (min)</i></strong></td>
+                <td><strong><i>Java Implementation (min)</i></strong></td>
+            </tr>
+            <tr>
+                <td class="code" markdown="block" style="vertical-align: top;">
+{% highlight python %}
+import math
 
-    public MaxHeap(int[] ary) {
-        this.ary = ary;
-        this.heap_size = this.ary.length;
-        for (int i = this.heap_size/2 - 1; i >= 0; i--) {
-            this.heapify(i);
-        }
-    }
-
-    public void heapify(int i) {
-        int left = i*2 + 1, right = i*2 + 2, largest = 0;
-        if (left < this.heap_size && this.ary[left] > this.ary[i]) {
-            largest = left;
-        } else {
-            largest = i;
-        }
-        if (right < this.heap_size && this.ary[right] > this.ary[largest]) {
-            largest = right;
-        }
-        if (largest != i) {
-            int temp = this.ary[i];
-            this.ary[i] = this.ary[largest];
-            this.ary[largest] = temp;
-            this.heapify(largest);
-        }
-    }
-}
+class MinHeap:
     
-static void heap_sort(int[] ary) {
-    MaxHeap h = new MaxHeap(ary);
-    for (int i = h.heap_size - 1; i > 0; i--) {
-        int temp = h.ary[0];
-        h.ary[0] = h.ary[i];
-        h.ary[i] = temp;
-        h.heap_size -= 1;
-        h.heapify(0);
-    }
-}
+    def __init__(self, ary):
+        self.ary, self.heap_size = ary, len(ary)
+        for i in range(self.heap_size//2 - 1, -1, -1):
+            self.heapify(i)
+    
+    def heapify(self, i):
+        left, right  = i*2 + 1, i*2 + 2
+        if left < self.heap_size and self.ary[left] < self.ary[i]:
+            smallest = left
+        else:
+            smallest = i
+        if right < self.heap_size and self.ary[right] < self.ary[smallest]:
+            smallest = right
+        if smallest != i:
+            self.ary[i], self.ary[smallest] = self.ary[smallest], self.ary[i]
+            self.heapify(smallest)
+            
+    def minimum(self):
+        return self.ary[0]
+    
+    def extract_min(self):
+        if self.heap_size < 1:
+            raise Exception("You are attempting to return the minimum of an empty heap.")
+        minimum, self.ary[0] = self.ary[0], self.ary[self.heap_size-1]
+        self.heap_size -= 1
+        self.heapify(0)
+        return minimum
+    
+    def decrease_key(self, i, key):
+        if key > self.ary[i]:
+            raise Exception("You are attempting to decrease the key at index " + str(i) + " with a larger key value.")
+        self.ary[i], parent = key, (i - 1) // 2
+        while i > 0 and self.ary[parent] > self.ary[i]:
+            self.ary[i], self.ary[parent], i, parent = self.ary[parent], self.ary[i], parent, (parent - 1) // 2
+    
+    def insert(self, key):
+        self.ary.append(float("inf"))
+        self.heap_size += 1
+        self.decrease_key(self.heap_size - 1, key)
+    
+    def __str__(self):
+        # Works when heap elements can be represented by a single character. Breaks for any heap element of len(str(elem)) > 1.
+        i, j, u, s, b, ret = 2**int(math.log(self.heap_size, 2)) - 1, self.heap_size, 0, 0, 1, ""
+        while i > 0:
+            to_add = s*" " + u*"_" + ("_"*u + (b-u*2)*" " + "_"*u).join([str(e) for e in self.ary[i:j]]) + u*"_" + s*" " + "\n"
+            slashes = (s + u)*" " + (b*" ").join(["/" if x % 2 else "\\" for x in range(i, j)]) + (s + u)*" " + "\n"
+            u, j = s + u, i
+            ret, s = slashes + to_add + ret, u + 1
+            b, i = (s + u)*2 + 1, i//2
+        return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret
+{% endhighlight %}
+                <td class="code" markdown="block" style="vertical-align: top;">
+{% highlight java %}
 {% endhighlight %}
