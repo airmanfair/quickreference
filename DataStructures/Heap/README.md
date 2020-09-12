@@ -130,6 +130,7 @@ import java.util.ArrayList;
 import java.lang.Math;
     
 class Heap {
+    
     public ArrayList<Integer> ary;
     public int heap_size;
 
