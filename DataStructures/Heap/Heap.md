@@ -40,9 +40,9 @@ class MaxHeap:
     def __init__(self, ary):
         self.ary, self.heap_size = ary, len(ary)
         for i in range(self.heap_size//2 - 1, -1, -1):
-            self.heapify(i)
+            self.balance(i)
     
-    def heapify(self, i):
+    def balance(self, i):
         left, right  = i*2 + 1, i*2 + 2
         if left < self.heap_size and self.ary[left] > self.ary[i]:
             largest = left
@@ -52,7 +52,7 @@ class MaxHeap:
             largest = right
         if largest != i:
             self.ary[i], self.ary[largest] = self.ary[largest], self.ary[i]
-            self.heapify(largest)
+            self.balance(largest)
             
     def maximum(self):
         return self.ary[0]
@@ -62,7 +62,7 @@ class MaxHeap:
             raise Exception("You are attempting to return the maximum of an empty heap.")
         maximum, self.ary[0] = self.ary[0], self.ary[self.heap_size-1]
         self.heap_size -= 1
-        self.heapify(0)
+        self.balance(0)
         return maximum
     
     def increase_key(self, i, key):
@@ -105,9 +105,9 @@ class MinHeap:
     def __init__(self, ary):
         self.ary, self.heap_size = ary, len(ary)
         for i in range(self.heap_size//2 - 1, -1, -1):
-            self.heapify(i)
+            self.balance(i)
     
-    def heapify(self, i):
+    def balance(self, i):
         left, right  = i*2 + 1, i*2 + 2
         if left < self.heap_size and self.ary[left] < self.ary[i]:
             smallest = left
@@ -117,7 +117,7 @@ class MinHeap:
             smallest = right
         if smallest != i:
             self.ary[i], self.ary[smallest] = self.ary[smallest], self.ary[i]
-            self.heapify(smallest)
+            self.balance(smallest)
             
     def minimum(self):
         return self.ary[0]
@@ -127,7 +127,7 @@ class MinHeap:
             raise Exception("You are attempting to return the minimum of an empty heap.")
         minimum, self.ary[0] = self.ary[0], self.ary[self.heap_size-1]
         self.heap_size -= 1
-        self.heapify(0)
+        self.balance(0)
         return minimum
     
     def decrease_key(self, i, key):

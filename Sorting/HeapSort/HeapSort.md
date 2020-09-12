@@ -6,6 +6,7 @@
                 <td><strong><i>Class</i></strong></td>
                 <td><strong><i>Type</i></strong></td>
                 <td><strong><i>Category</i></strong></td>
+                <td><strong><i><a href="/quickreference/DataStructures/DataStructures">Data Structure</a></i></strong></td>
                 <td><strong><i>Space</i></strong></td>
                 <td><strong><i>Time: Worst</i></strong></td>
                 <td><strong><i>Time: Average</i></strong></td>
@@ -14,6 +15,7 @@
                 <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
                 <td>In-place</td>
                 <td>Efficient</td>
+                <td><a href="/quickreference/DataStructures/Heap/Heap">Heap</a></td>
                 <td><i>O</i>(1)</td>
                 <td><i>O</i>(n log n)</td>
                 <td><i>O</i>(n log n)</td>
@@ -47,9 +49,9 @@ class MaxHeap:
     def __init__(self, ary):
         self.ary, self.heap_size = ary, len(ary)
         for i in range(self.heap_size//2 - 1, -1, -1):
-            self.heapify(i)
+            self.balance(i)
       
-    def heapify(self, i):
+    def balance(self, i):
         left, right  = i*2 + 1, i*2 + 2
         if left < self.heap_size and self.ary[left] > self.ary[i]:
             largest = left
@@ -59,14 +61,14 @@ class MaxHeap:
             largest = right
         if largest != i:
             self.ary[i], self.ary[largest] = self.ary[largest], self.ary[i]
-            self.heapify(largest)
+            self.balance(largest)
         
 def heap_sort(ary):
     h = MaxHeap(ary)
     for i in range(h.heap_size - 1, 0, -1):
         h.ary[0], h.ary[i] = h.ary[i], h.ary[0]
         h.heap_size -= 1
-        h.heapify(0)
+        h.balance(0)
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
@@ -81,11 +83,11 @@ class MaxHeap {
         this.ary = ary;
         this.heap_size = this.ary.length;
         for (int i = this.heap_size/2 - 1; i >= 0; i--) {
-            this.heapify(i);
+            this.balance(i);
         }
     }
 
-    public void heapify(int i) {
+    public void balance(int i) {
         int left = i*2 + 1, right = i*2 + 2, largest = 0;
         if (left < this.heap_size && this.ary[left] > this.ary[i]) {
             largest = left;
@@ -99,7 +101,7 @@ class MaxHeap {
             int temp = this.ary[i];
             this.ary[i] = this.ary[largest];
             this.ary[largest] = temp;
-            this.heapify(largest);
+            this.balance(largest);
         }
     }
 }
@@ -111,7 +113,7 @@ static void heap_sort(int[] ary) {
         h.ary[0] = h.ary[i];
         h.ary[i] = temp;
         h.heap_size -= 1;
-        h.heapify(0);
+        h.balance(0);
     }
 }
 {% endhighlight %}

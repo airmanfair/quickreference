@@ -6,6 +6,7 @@
                 <td><strong><i>Class</i></strong></td>
                 <td><strong><i>Type</i></strong></td>
                 <td><strong><i>Category</i></strong></td>
+                <td><strong><i><a href="/DataStructures/">Data Structure</a></i></strong></td>
                 <td><strong><i>Space</i></strong></td>
                 <td><strong><i>Time: Worst</i></strong></td>
                 <td><strong><i>Time: Average</i></strong></td>
@@ -14,6 +15,7 @@
                 <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
                 <td>In-place</td>
                 <td>Naive</td>
+                <td>Array</td>
                 <td><i>O</i>(1)</td>
                 <td><i>O</i>(n<sup>2</sup>)</td>
                 <td><i>O</i>(n<sup>2</sup>)</td>
