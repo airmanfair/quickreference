@@ -13,7 +13,6 @@
     </tr>
     <tr>
         <td><a href="/quickreference/DataStructures/Heap/Heap">Heap</a></td>
-        <td>Heap</td>
         <td><i>O</i>(log n)</td>
         <td><i>O</i>(log n)</td>
         <td><i>O</i>(log n)</td>
