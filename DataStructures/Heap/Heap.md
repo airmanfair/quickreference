@@ -142,9 +142,9 @@ class MinHeap:
             b, i = (s + u)*2 + 1, i//2
         return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret                
 {% endhighlight %}
-                    
-                <td class="code" markdown="block" style="vertical-align: top;">
-                    
+
+<td class="code" markdown="block" style="vertical-align: top;">
+    
 {% highlight java %}
 import java.util.ArrayList;
 import java.lang.Math.log;
