@@ -11,7 +11,7 @@
                     <td><strong><i>Class</i></strong></td>
                     <td><strong><i>Type</i></strong></td>
                     <td><strong><i>Category</i></strong></td>
-                    <td><strong><i>Data Structure</i></strong></td>
+                    <td><strong><i><a href="/DataStructures/">Data Structure</a></i></strong></td>
                     <td><strong><i>Space</i></strong></td>
                     <td><strong><i>Time: Worst</i></strong></td>
                     <td><strong><i>Time: Average</i></strong></td>
