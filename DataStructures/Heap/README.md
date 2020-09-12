@@ -30,12 +30,25 @@
 ``` python
 import math
 
-class MaxHeap:
+class Heap:
     
     def __init__(self, ary):
         self.ary, self.heap_size = ary, len(ary)
         for i in range(self.heap_size//2 - 1, -1, -1):
             self.balance(i)
+    
+    def __str__(self):
+        warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n"
+        i, j, u, s, b, ret = 2**int(math.log(self.heap_size, 2)) - 1, self.heap_size, 0, 0, 1, ""
+        while i > 0:
+            to_add = s*" " + u*"_" + ("_"*u + (b-u*2)*" " + "_"*u).join([str(e) for e in self.ary[i:j]]) + u*"_" + s*" " + "\n"
+            slashes = (s + u)*" " + (b*" ").join(["/" if x % 2 else "\\" for x in range(i, j)]) + (s + u)*" " + "\n"
+            u, j = s + u, i
+            ret, s = slashes + to_add + ret, u + 1
+            b, i = (s + u)*2 + 1, i//2
+        return warning + s*" " + u*"_" + str(self.ary[i]) + u*"_" + s*" " + "\n" + ret
+
+class MaxHeap(Heap):
     
     def balance(self, i):
         left, right  = i*2 + 1, i*2 + 2
@@ -72,23 +85,8 @@ class MaxHeap:
         self.heap_size += 1
         self.increase_key(self.heap_size - 1, key)
     
-    def __str__(self):
-        warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n"
-        i, j, u, s, b, ret = 2**int(math.log(self.heap_size, 2)) - 1, self.heap_size, 0, 0, 1, ""
-        while i > 0:
-            to_add = s*" " + u*"_" + ("_"*u + (b-u*2)*" " + "_"*u).join([str(e) for e in self.ary[i:j]]) + u*"_" + s*" " + "\n"
-            slashes = (s + u)*" " + (b*" ").join(["/" if x % 2 else "\\" for x in range(i, j)]) + (s + u)*" " + "\n"
-            u, j = s + u, i
-            ret, s = slashes + to_add + ret, u + 1
-            b, i = (s + u)*2 + 1, i//2
-        return warning + s*" " + u*"_" + str(self.ary[i]) + u*"_" + s*" " + "\n" + ret
 
-class MinHeap:
-    
-    def __init__(self, ary):
-        self.ary, self.heap_size = ary, len(ary)
-        for i in range(self.heap_size//2 - 1, -1, -1):
-            self.balance(i)
+class MinHeap(Heap):
     
     def balance(self, i):
         left, right  = i*2 + 1, i*2 + 2
@@ -124,17 +122,6 @@ class MinHeap:
         self.ary.append(float("inf"))
         self.heap_size += 1
         self.decrease_key(self.heap_size - 1, key)
-    
-    def __str__(self):
-        warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n"
-        i, j, u, s, b, ret = 2**int(math.log(self.heap_size, 2)) - 1, self.heap_size, 0, 0, 1, ""
-        while i > 0:
-            to_add = s*" " + u*"_" + ("_"*u + (b-u*2)*" " + "_"*u).join([str(e) for e in self.ary[i:j]]) + u*"_" + s*" " + "\n"
-            slashes = (s + u)*" " + (b*" ").join(["/" if x % 2 else "\\" for x in range(i, j)]) + (s + u)*" " + "\n"
-            u, j = s + u, i
-            ret, s = slashes + to_add + ret, u + 1
-            b, i = (s + u)*2 + 1, i//2
-        return warning + s*" " + u*"_" + str(self.ary[i]) + u*"_" + s*" " + "\n" + ret
 ```
 
 # Java Implementation
@@ -142,10 +129,39 @@ class MinHeap:
 import java.util.ArrayList;
 import java.lang.Math;
     
-class MaxHeap {
-
+class Heap {
     public ArrayList<Integer> ary;
     public int heap_size;
+
+    public String toString() {
+        int i = (int) Math.pow(2, (int) (Math.log(this.heap_size)/Math.log(2))) - 1, j = this.heap_size, u = 0, s = 0, b = 1;
+        String ret = "", warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n";
+        while (i > 0) {
+            String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
+            String to_add = s_space + u_underscore, buffer = u_underscore + new String(new char[b-u*2]).replace("\0", " ") + u_underscore;
+            for (int k = i; k < j-1; k++) {
+                to_add += this.ary.get(k).toString() + buffer;
+            }
+            to_add += this.ary.get(j-1).toString() + u_underscore + s_space + "\n";
+            String slashes = new String(new char[s+u]).replace("\0", " ");
+            buffer = new String(new char[b]).replace("\0", " ");
+            for (int k = i; k < j-1; k++) {
+                slashes += (k % 2 == 1 ? "/" : "\\") + buffer;
+            }
+            slashes += ((j - 1) % 2 == 1 ? "/" : "\\") + new String(new char[s+u]).replace("\0", " ") + "\n";
+            ret = slashes + to_add + ret;
+            u = s + u;
+            s = u + 1;
+            b = (s + u)*2 + 1;
+            j = i;
+            i = i / 2;
+        }
+        String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
+        return warning + s_space + u_underscore + this.ary.get(0).toString() + u_underscore + s_space + "\n" + ret;
+    }
+}
+
+class MaxHeap extends Heap {
 
     public MaxHeap(ArrayList<Integer> ary) {
         this.ary = ary;
@@ -190,7 +206,7 @@ class MaxHeap {
 
     public void increase_key(int i, int key) throws Exception {
         if (key < this.ary.get(i)) {
-            throw new Exception("You are attempting to increase the key at index " + Integer.toString(i) + " with a smaller key value.");
+            throw new Exception("You are attempting to increase the key at index " + i + " with a smaller key value.");
         }
         this.ary.set(i, key);
         int parent = (i - 1) / 2;
@@ -208,39 +224,9 @@ class MaxHeap {
         this.heap_size++;
         this.increase_key(this.heap_size - 1, key);
     }
-
-    public String toString() {
-        int i = (int) Math.pow(2, (int) (Math.log(this.heap_size)/Math.log(2))) - 1, j = this.heap_size, u = 0, s = 0, b = 1;
-        String ret = "", warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n";
-        while (i > 0) {
-            String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
-            String to_add = s_space + u_underscore, buffer = u_underscore + new String(new char[b-u*2]).replace("\0", " ") + u_underscore;
-            for (int k = i; k < j-1; k++) {
-                to_add += this.ary.get(k).toString() + buffer;
-            }
-            to_add += this.ary.get(j-1).toString() + u_underscore + s_space + "\n";
-            String slashes = new String(new char[s+u]).replace("\0", " ");
-            buffer = new String(new char[b]).replace("\0", " ");
-            for (int k = i; k < j-1; k++) {
-                slashes += (k % 2 == 1 ? "/" : "\\") + buffer;
-            }
-            slashes += ((j - 1) % 2 == 1 ? "/" : "\\") + new String(new char[s+u]).replace("\0", " ") + "\n";
-            ret = slashes + to_add + ret;
-            u = s + u;
-            s = u + 1;
-            b = (s + u)*2 + 1;
-            j = i;
-            i = i / 2;
-        }
-        String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
-        return warning + s_space + u_underscore + this.ary.get(i).toString() + u_underscore + s_space + "\n" + ret;
-    }
 }
 
-class MinHeap {
-
-    public ArrayList<Integer> ary;
-    public int heap_size;
+class MinHeap extends Heap {
 
     public MinHeap(ArrayList<Integer> ary) {
         this.ary = ary;
@@ -302,33 +288,6 @@ class MinHeap {
         this.ary.add(Integer.MAX_VALUE);
         this.heap_size++;
         this.decrease_key(this.heap_size - 1, key);
-    }
-
-    public String toString() {
-        int i = (int) Math.pow(2, (int) (Math.log(this.heap_size)/Math.log(2))) - 1, j = this.heap_size, u = 0, s = 0, b = 1;
-        String ret = "", warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n";
-        while (i > 0) {
-            String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
-            String to_add = s_space + u_underscore, buffer = u_underscore + new String(new char[b-u*2]).replace("\0", " ") + u_underscore;
-            for (int k = i; k < j-1; k++) {
-                to_add += this.ary.get(k).toString() + buffer;
-            }
-            to_add += this.ary.get(j-1).toString() + u_underscore + s_space + "\n";
-            String slashes = new String(new char[s+u]).replace("\0", " ");
-            buffer = new String(new char[b]).replace("\0", " ");
-            for (int k = i; k < j-1; k++) {
-                slashes += (k % 2 == 1 ? "/" : "\\") + buffer;
-            }
-            slashes += ((j - 1) % 2 == 1 ? "/" : "\\") + new String(new char[s+u]).replace("\0", " ") + "\n";
-            ret = slashes + to_add + ret;
-            u = s + u;
-            s = u + 1;
-            b = (s + u)*2 + 1;
-            j = i;
-            i = i / 2;
-        }
-        String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
-        return warning + s_space + u_underscore + this.ary.get(0).toString() + u_underscore + s_space + "\n" + ret;
     }
 }
 ```
