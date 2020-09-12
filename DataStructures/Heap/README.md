@@ -144,10 +144,10 @@ class MinHeap:
 
 # Java Implementation (max)
 ``` java
-
+import java.util.ArrayList;
 ```
 
 # Java Implementation (min)
 ``` java
-
+import java.util.ArrayList;
 ```
