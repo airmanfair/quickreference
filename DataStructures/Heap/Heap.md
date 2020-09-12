@@ -231,7 +231,7 @@ class MaxHeap {
             for (int k = i; k < j-1; k++) {
                 slashes += (k % 2 == 1 ? "/" : "\\") + buffer;
             }
-            slashes += (j - 1 % 2 == 1 ? "/" : "\\") + new String(new char[s+u]).replace("\0", " ") + "\n";
+            slashes += ((j - 1) % 2 == 1 ? "/" : "\\") + new String(new char[s+u]).replace("\0", " ") + "\n";
             ret = slashes + to_add + ret;
             u = s + u;
             s = u + 1;
@@ -241,6 +241,101 @@ class MaxHeap {
         }
         String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
         return warning + s_space + u_underscore + this.ary.get(i).toString() + u_underscore + s_space + "\n" + ret;
+    }
+}
+    
+class MinHeap {
+
+    public ArrayList<Integer> ary;
+    public int heap_size;
+
+    public MinHeap(ArrayList<Integer> ary) {
+        this.ary = ary;
+        this.heap_size = this.ary.size();
+        for (int i = this.heap_size/2 - 1; i >= 0; i--) {
+            this.balance(i);
+        }
+    }
+
+    public void balance(int i) {
+        int left = i*2 + 1, right = i*2 + 2, smallest = 0;
+        if (left < this.heap_size && this.ary.get(left) < this.ary.get(i)) {
+            smallest = left;
+        } else {
+            smallest = i;
+        }
+        if (right < this.heap_size && this.ary.get(right) < this.ary.get(smallest)) {
+            smallest = right;
+        }
+        if (smallest != i) {
+            int temp = this.ary.get(i);
+            this.ary.set(i, this.ary.get(smallest));
+            this.ary.set(smallest, temp);
+            this.balance(smallest);
+        }
+    }
+
+    public int minimum() {
+        return this.ary.get(0);
+    }
+
+    public int extract_min() throws Exception {
+        if (this.heap_size < 1) {
+            throw new Exception("You are attempting to return the minimum of an empty heap.");
+        }
+        int minimum = this.ary.get(0);
+        this.ary.set(0, this.ary.get(this.heap_size-1));
+        this.heap_size--;
+        this.balance(0);
+        return minimum;
+    }
+
+    public void decrease_key(int i, int key) throws Exception {
+        if (key > this.ary.get(i)) {
+            throw new Exception("You are attempting to decrease the key at index " + i + " with a larger key value.");
+        }
+        this.ary.set(i, key);
+        int parent = (i - 1) / 2;
+        while (i > 0 && this.ary.get(parent) > this.ary.get(i)) {
+            int temp = this.ary.get(i);
+            this.ary.set(i, this.ary.get(parent));
+            this.ary.set(parent, temp);
+            i = parent;
+            parent = (parent - 1) / 2;
+        }
+    }
+
+    public void insert(int key) throws Exception {
+        this.ary.add(Integer.MAX_VALUE);
+        this.heap_size++;
+        this.decrease_key(this.heap_size - 1, key);
+    }
+
+    public String toString() {
+        int i = (int) Math.pow(2, (int) (Math.log(this.heap_size)/Math.log(2))) - 1, j = this.heap_size, u = 0, s = 0, b = 1;
+        String ret = "", warning = "Warning: this is only designed to cast heaps with single digit elements to string.\n";
+        while (i > 0) {
+            String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
+            String to_add = s_space + u_underscore, buffer = u_underscore + new String(new char[b-u*2]).replace("\0", " ") + u_underscore;
+            for (int k = i; k < j-1; k++) {
+                to_add += this.ary.get(k).toString() + buffer;
+            }
+            to_add += this.ary.get(j-1).toString() + u_underscore + s_space + "\n";
+            String slashes = new String(new char[s+u]).replace("\0", " ");
+            buffer = new String(new char[b]).replace("\0", " ");
+            for (int k = i; k < j-1; k++) {
+                slashes += (k % 2 == 1 ? "/" : "\\") + buffer;
+            }
+            slashes += ((j - 1) % 2 == 1 ? "/" : "\\") + new String(new char[s+u]).replace("\0", " ") + "\n";
+            ret = slashes + to_add + ret;
+            u = s + u;
+            s = u + 1;
+            b = (s + u)*2 + 1;
+            j = i;
+            i = i / 2;
+        }
+        String s_space = new String(new char[s]).replace("\0", " "), u_underscore = new String(new char[u]).replace("\0", "_");
+        return warning + s_space + u_underscore + this.ary.get(0).toString() + u_underscore + s_space + "\n" + ret;
     }
 }
 {% endhighlight %}
