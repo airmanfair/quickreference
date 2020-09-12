@@ -26,7 +26,7 @@
     </tr>
 </table>
 
-# Python Implementation (max)
+# Python Implementation
 ``` python
 import math
 
@@ -82,11 +82,6 @@ class MaxHeap:
             ret, s = slashes + to_add + ret, u + 1
             b, i = (s + u)*2 + 1, i//2
         return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret
-```
-
-# Python Implementation (min)
-```python
-import math
 
 class MinHeap:
     
@@ -142,12 +137,8 @@ class MinHeap:
         return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret
 ```
 
-# Java Implementation (max)
+# Java Implementation
 ``` java
 import java.util.ArrayList;
-```
-
-# Java Implementation (min)
-``` java
-import java.util.ArrayList;
+import java.lang.Math.log;
 ```

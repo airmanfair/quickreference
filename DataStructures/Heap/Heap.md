@@ -27,8 +27,8 @@
     <tr>
         <table>
             <tr style="text-align: center; font-size:20px;">
-                <td><strong><i>Python Implementation (max)</i></strong></td>
-                <td><strong><i>Java Implementation (max)</i></strong></td>
+                <td><strong><i>Python Implementation</i></strong></td>
+                <td><strong><i>Java Implementation</i></strong></td>
             </tr>
             <tr>
                 <td class="code" markdown="block" style="vertical-align: top;">
@@ -87,24 +87,7 @@ class MaxHeap:
             u, j = s + u, i
             ret, s = slashes + to_add + ret, u + 1
             b, i = (s + u)*2 + 1, i//2
-        return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret                   
-{% endhighlight %}
-                    
-                <td class="code" markdown="block" style="vertical-align: top;">
-                    
-{% highlight java %}
-import java.util.ArrayList;                    
-{% endhighlight %}
-                    
-            <tr style="text-align: center; font-size:20px;">
-                <td><strong><i>Python Implementation (min)</i></strong></td>
-                <td><strong><i>Java Implementation (min)</i></strong></td>
-            </tr>
-            <tr>
-                <td class="code" markdown="block" style="vertical-align: top;">
-                    
-{% highlight python %}                    
-import math
+        return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret
 
 class MinHeap:
     
@@ -157,11 +140,12 @@ class MinHeap:
             u, j = s + u, i
             ret, s = slashes + to_add + ret, u + 1
             b, i = (s + u)*2 + 1, i//2
-        return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret
+        return s*" " + u*"_" + (b*" ").join([str(elem) for elem in self.ary[i:j]]) + u*"_" + s*" " + "\n" + ret                
 {% endhighlight %}
-
-                    <td class="code" markdown="block" style="vertical-align: top;">
-                        
+                    
+                <td class="code" markdown="block" style="vertical-align: top;">
+                    
 {% highlight java %}
 import java.util.ArrayList;
+import java.lang.Math.log;
 {% endhighlight %}
