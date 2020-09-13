@@ -29,8 +29,8 @@
                 <td><strong><i>Video</i></strong></td>
             </tr>
             <tr>
-                <td><img src="MergeSort.gif" alt="Merge Sort GIF" style="width: auto; height: 315px;"/></td>
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/4VqmGXwpLqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                <td style="text-align: center;"><img src="MergeSort.gif" alt="Merge Sort GIF" style="width: auto; height: 315px;"/></td>
+                <td style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/4VqmGXwpLqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
             </tr>
         </table>
     </tr>
