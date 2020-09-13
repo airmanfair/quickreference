@@ -29,7 +29,7 @@
                 <td><strong><i>Video</i></strong></td>
             </tr>
             <tr>
-                <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
+                <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" style="width: auto; height: 315px;"/></td>
                 <td><a href="https://youtu.be/JU767SDMDvA"><img src="http://img.youtube.com/vi/JU767SDMDvA/0.jpg" alt="Insertion Sort Video" width="560" height="315"/></a></td>
             </tr>
         </table>

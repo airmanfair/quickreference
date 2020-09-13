@@ -29,7 +29,7 @@
                 <td><strong><i>Video</i></strong></td>
             </tr>
             <tr>
-                <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" width="525" height="315"/></td>
+                <td><img src="InsertionSort.gif" alt="Insertion Sort GIF" style="width: auto; height: 315px;"/></td>
                 <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
             </tr>
         </table>
