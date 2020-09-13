@@ -6,8 +6,8 @@
         <td><strong><i>Category</i></strong></td>
         <td><strong><i><a href="/quickreference/DataStructures/DataStructures">Data Structure</a></i></strong></td>
         <td><strong><i>Space</i></strong></td>
-        <td><strong><i>Time</i></strong></td>
-        <td><strong><i>Average</i></strong></td>
+        <td><strong><i>Time: Worst</i></strong></td>
+        <td><strong><i>Time: Average</i></strong></td>
     </tr>
     <tr>
         <td><a href="/quickreference/Sorting/InsertionSort/InsertionSort">Insertion Sort</a></td>
