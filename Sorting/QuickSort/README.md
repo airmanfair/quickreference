@@ -38,10 +38,45 @@
 
 # Python Implementation
 ``` python
-# TODO
+def quick_sort(ary, start, end):
+    
+    def partition(start, end):
+        x, i = ary[end], start - 1
+        for j in range(start, end):
+            if ary[j] <= x:
+                i += 1
+                ary[i], ary[j] = ary[j], ary[i]
+        ary[i+1], ary[end] = ary[end], ary[i+1]
+        return i + 1
+    
+    if start < end:
+        mid = partition(start, end)
+        quick_sort(ary, start, mid - 1)
+        quick_sort(ary, mid + 1, end)
 ```
 
 # Java Implementation
 ``` java
-// TODO
+static int partition(int[] ary, int start, int end) {
+    int x = ary[end], i = start - 1;
+    for (int j = start; j < end; j++) {
+        if (ary[j] <= x) {
+            int temp = ary[++i];
+            ary[i] = ary[j];
+            ary[j] = temp;
+        }
+    }
+    int temp = ary[i+1];
+    ary[i+1] = ary[end];
+    ary[end] = temp;
+    return i + 1;
+}
+
+static void quick_sort(int[] ary, int start, int end) {
+    if (start < end) {
+        int mid = partition(ary, start, end);
+        quick_sort(ary, start, mid - 1);
+        quick_sort(ary, mid + 1, end);
+    }
+}
 ```
