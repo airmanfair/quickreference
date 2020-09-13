@@ -29,8 +29,8 @@
                 <td><strong><i>Video</i></strong></td>
             </tr>
             <tr>
-                <td><img src="SelectionSort.gif" alt="Selection Sort GIF"  style="width: auto; height: 315px;"/></td>
-                <td><a href="https://youtu.be/g-PGLbMth_g"><img src="http://img.youtube.com/vi/g-PGLbMth_g/0.jpg" alt="Selection Sort Video" width="560" height="315"/></a></td>
+                <td><img src="SelectionSort.gif" alt="Selection Sort GIF"  style="width: auto; height: 800px;"/></td>
+                <td><a href="https://youtu.be/g-PGLbMth_g"><img src="http://img.youtube.com/vi/g-PGLbMth_g/0.jpg" alt="Selection Sort Video" style="width: auto; height: 800px;"/></a></td>
             </tr>
         </table>
     </tr>
