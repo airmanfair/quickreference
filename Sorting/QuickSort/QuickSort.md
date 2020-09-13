@@ -44,9 +44,11 @@
                 <td class="code" markdown="block" style="vertical-align: top;">
                     
 {% highlight python %}
-def quick_sort(ary, start, end):
+import random as r
+
+def quick_sort(ary, start, end, random=False):
     
-    def partition(start, end):
+    def deterministic_partition(start, end):
         x, i = ary[end], start - 1
         for j in range(start, end):
             if ary[j] <= x:
@@ -55,16 +57,27 @@ def quick_sort(ary, start, end):
         ary[i+1], ary[end] = ary[end], ary[i+1]
         return i + 1
     
-    if start < end:
-        mid = partition(start, end)
-        quick_sort(ary, start, mid - 1)
-        quick_sort(ary, mid + 1, end)
+    def random_partition(start, end):
+        i = r.randint(start, end)
+        ary[end], ary[i] = ary[i], ary[end]
+        return deterministic_partition(start, end)
+    
+    def helper(start, end):
+        if start < end:
+            mid = partition(start, end)
+            helper(start, mid - 1)
+            helper(mid + 1, end)
+    
+    partition = random_partition if random else deterministic_partition
+    helper(start, end)
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
-static int partition(int[] ary, int start, int end) {
+import java.util.Random;
+
+static int deterministic_partition(int[] ary, int start, int end) {
     int x = ary[end], i = start - 1;
     for (int j = start; j < end; j++) {
         if (ary[j] <= x) {
@@ -79,11 +92,18 @@ static int partition(int[] ary, int start, int end) {
     return i + 1;
 }
 
-static void quick_sort(int[] ary, int start, int end) {
+static int random_partition(int[] ary, int start, int end) {
+    int i = new Random().nextInt(end - start) + start, temp = ary[end];
+    ary[end] = ary[i];
+    ary[i] = temp;
+    return deterministic_partition(ary, start, end);
+}
+
+static void quick_sort(int[] ary, int start, int end, boolean random) {
     if (start < end) {
-        int mid = partition(ary, start, end);
-        quick_sort(ary, start, mid - 1);
-        quick_sort(ary, mid + 1, end);
+        int mid = random ? random_partition(ary, start, end) : deterministic_partition(ary, start, end);
+        quick_sort(ary, start, mid - 1, random);
+        quick_sort(ary, mid + 1, end, random);
     }
 }
 {% endhighlight %}
