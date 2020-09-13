@@ -48,7 +48,7 @@
                 </tr>
                 <tr>
                     <td><a href="/Sorting/MergeSort/">Merge Sort</a></td>
-                    <td><a href="/Sorting/Sorting">Sorting</a></td>
+                    <td><a href="/Sorting/">Sorting</a></td>
                     <td>Divide & Conquer</td>
                     <td>Efficient</td>
                     <td>Array</td>
@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td><a href="/Sorting/HeapSort/">Heap Sort</a></td>
-                    <td><a href="/Sorting/Sorting">Sorting</a></td>
+                    <td><a href="/Sorting/">Sorting</a></td>
                     <td>In-place</td>
                     <td>Efficient</td>
                     <td><a href="/DataStructures/Heap/">Heap</a></td>
@@ -67,14 +67,14 @@
                     <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/Sorting/QuickSort/">Quick Sort</a></td>
+                    <td><a href="/Sorting/">Sorting</a></td>
+                    <td>Divide & Conquer</td>
+                    <td>Efficient</td>
+                    <td>Array</td>
+                    <td><i>O</i>(log n)</td>
+                    <td><i>O</i>(n<sup>2</sup>)</td>
+                    <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

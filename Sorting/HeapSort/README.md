@@ -30,7 +30,7 @@
             </tr>
             <tr>
                 <td><img src="HeapSort.gif" alt="Heap Sort GIF" width="342" height="315"/></td>
-                <td><a href="https://youtu.be/2DmK_H7IdTo"><img src="http://img.youtube.com/vi/2DmK_H7IdTo/0.jpg" alt="Merge Sort Video" width="560" height="315"/></a></td>
+                <td><a href="https://youtu.be/2DmK_H7IdTo"><img src="http://img.youtube.com/vi/2DmK_H7IdTo/0.jpg" alt="Quick Sort Video" width="560" height="315"/></a></td>
             </tr>
         </table>
     </tr>

@@ -67,14 +67,14 @@
                     <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/quickreference/Sorting/QuickSort/QuickSort">Quick Sort</a></td>
+                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td>Divide & Conquer</td>
+                    <td>Efficient</td>
+                    <td>Array</td>
+                    <td><i>O</i>(log n)</td>
+                    <td><i>O</i>(n<sup>2</sup>)</td>
+                    <td><i>O</i>(n log n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
