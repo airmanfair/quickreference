@@ -39,11 +39,10 @@
 # Python Implementation
 ``` python
 def bubble_sort(ary):
-    n = len(ary)
-    for i in range(n):
-        for j in range(n-1, i, -1):
-            if ary[j] < ary[j-1]:
-                ary[j], ary[j-1] = ary[j-1], ary[j]
+    for i in range(len(ary) - 1, 0, -1):
+        for j in range(i):
+            if ary[j] > ary[j+1]:
+                ary[j], ary[j+1] = ary[j+1], ary[j]
 ```
 
 # Java Implementation

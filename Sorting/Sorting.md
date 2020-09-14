@@ -63,4 +63,13 @@
         <td><i>O</i>(n<sup>2</sup>)</td>
         <td><i>O</i>(n log n)</td>
     </tr>
+    <tr>
+        <td><a href="/quickreference/Sorting/CountingSort/CountingSort">Counting Sort</a></td>
+        <td>Linear Sort</td>
+        <td>Efficient</td>
+        <td>Array</td>
+        <td><i>O</i>(n + k)</td>
+        <td><i>O</i>(n + k)</td>
+        <td><i>O</i>(n + k)</td>
+    </tr>
 </table>
