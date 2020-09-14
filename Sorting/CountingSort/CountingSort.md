@@ -1,4 +1,4 @@
-# Radix Sort
+# Counting Sort
 <table>
     <tr>
         <table>
