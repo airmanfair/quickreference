@@ -38,23 +38,22 @@
 
 # Python Implementation
 ``` python
-def counting_sort(ary, k):
-    n = len(ary)
-    output, dist = [0]*n, [0]*(k + 1)
+def counting_sort(output, k):
+    ary, dist = output[:], [0]*(k + 1)
     for x in ary:
         dist[x] += 1
     for i in range(1, k + 1):
         dist[i] += dist[i-1]
-    for i in range(n-1, -1, -1):
+    for i in range(len(ary) - 1, -1, -1):
         output[dist[ary[i]]-1] = ary[i]
         dist[ary[i]] -= 1
-    return output
 ```
 
 # Java Implementation
 ``` java
-static int[] counting_sort(int[] ary, int k) {
-    int[] output = new int[ary.length], dist = new int[k+1];
+static void counting_sort(int[] output, int k) {
+    int[] ary = new int[output.length], dist = new int[k+1];
+    System.arraycopy(output, 0, ary, 0, output.length);
     for (int x : ary) {
         dist[x]++;
     }
@@ -65,6 +64,5 @@ static int[] counting_sort(int[] ary, int k) {
         output[dist[ary[i]]-1] = ary[i];
         dist[ary[i]]--;
     }
-    return output;
 }
 ```

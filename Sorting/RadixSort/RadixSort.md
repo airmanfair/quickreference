@@ -16,9 +16,9 @@
                 <td>Linear Sort</td>
                 <td>Efficient</td>
                 <td>Array</td>
-                <td><i>O</i>(n + k)</td>
-                <td><i>O</i>(n + k)</td>
-                <td><i>O</i>(n + k)</td>
+                <td><i>O</i>(n + d)</td>
+                <td><i>O</i>(d*(n + b))</td>
+                <td><i>O</i>(d*(n + b))</td>
             </tr>
         </table>
     </tr>
@@ -29,8 +29,8 @@
                 <td><strong><i>Video</i></strong></td>
             </tr>
             <tr>
-                <td style="text-align: center;"><img src="CountingSort.gif" alt="Counting Sort GIF" style="width: auto; height: 315px;"/></td>
-                <td style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/7zuGmKfUt7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                <td style="text-align: center;"><img src="RadixSort.gif" alt="Radix Sort GIF" style="width: auto; height: 315px;"/></td>
+                <td style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/nu4gDuFabIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
             </tr>
         </table>
     </tr>
@@ -44,32 +44,55 @@
                 <td class="code" markdown="block" style="vertical-align: top;">
                     
 {% highlight python %}
-def counting_sort(output, k):
-    ary, dist = output[:], [0]*(k + 1)
-    for x in ary:
-        dist[x] += 1
-    for i in range(1, k + 1):
-        dist[i] += dist[i-1]
-    for i in range(len(ary) - 1, -1, -1):
-        output[dist[ary[i]]-1] = ary[i]
-        dist[ary[i]] -= 1
+def radix_sort(ary):
+    
+    def counting_sort(output):
+        ary, dist = output[:], [0]*10
+        for x in ary:
+            dist[(x//denom)%10] += 1
+        for i in range(1, 10):
+            dist[i] += dist[i-1]
+        for i in range(n-1, -1, -1):
+            j = (ary[i] // denom) % 10
+            output[dist[j]-1] = ary[i]
+            dist[j] -= 1
+    
+    n, m, denom = len(ary), max(ary), 1
+    
+    while m > denom:
+        counting_sort(ary)
+        denom *= 10
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
-static void counting_sort(int[] output, int k) {
-    int[] ary = new int[output.length], dist = new int[k+1];
+static void counting_sort(int[] output, int denom) {
+    int[] ary = new int[output.length], dist = new int[10];
     System.arraycopy(output, 0, ary, 0, output.length);
     for (int x : ary) {
-        dist[x]++;
+        dist[(x/denom)%10]++;
     }
-    for (int i = 1; i <= k; i++) {
+    for (int i = 1; i < 10; i++) {
         dist[i] += dist[i-1];
     }
     for (int i = ary.length - 1; i >= 0; i--) {
-        output[dist[ary[i]]-1] = ary[i];
-        dist[ary[i]]--;
+        int j = (ary[i] / denom) % 10;
+        output[dist[j]-1] = ary[i];
+        dist[j]--;
+    }
+}
+
+static void radix_sort(int[] ary) {
+    int m = Integer.MIN_VALUE, denom = 1;
+    for (int x: ary) {
+        if (x > m) {
+            m = x;
+        }
+    }
+    while (m > denom) {
+        counting_sort(ary, denom);
+        denom *= 10;
     }
 }
 {% endhighlight %}
