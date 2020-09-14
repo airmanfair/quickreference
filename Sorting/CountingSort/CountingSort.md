@@ -12,7 +12,7 @@
                 <td><strong><i>Time: Average</i></strong></td>
             </tr>
             <tr>
-                <td><a href="/Sorting/">Sorting</a></td>
+                <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
                 <td>Linear Sort</td>
                 <td>Efficient</td>
                 <td>Array</td>
