@@ -107,14 +107,14 @@
                     <td><i>O</i>(n + p)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/quickreference/OrderStatistic/QuickSelect/QuickSelect">Quick Select</a></td>
+                    <td><a href="/quickreference/OrderStatistic/OrderStatistic">Order Statistic</a></td>
+                    <td>Randomized</td>
+                    <td>Efficient</td>
+                    <td>Array</td>
+                    <td><i>O</i>(log n)</td>
+                    <td><i>O</i>(n<sup>2</sup>)</td>
+                    <td><i>O</i>(n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

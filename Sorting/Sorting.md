@@ -16,7 +16,7 @@
         <td>Array</td>
         <td><i>O</i>(1)</td>
         <td><i>O</i>(n<sup>2</sup>)</td>
-        <td><i>Θ</i>(n<sup>2</sup>)</td>
+        <td><i>O</i>(n<sup>2</sup>)</td>
     </tr>
     <tr>
         <td><a href="/quickreference/Sorting/SelectionSort/SelectionSort">Selection Sort</a></td>
@@ -25,7 +25,7 @@
         <td>Array</td>
         <td><i>O</i>(1)</td>
         <td><i>O</i>(n<sup>2</sup>)</td>
-        <td><i>Θ</i>(n<sup>2</sup>)</td>
+        <td><i>O</i>(n<sup>2</sup>)</td>
     </tr>
     <tr>
         <td><a href="/quickreference/Sorting/BubbleSort/BubbleSort">Bubble Sort</a></td>
@@ -34,7 +34,7 @@
         <td>Array</td>
         <td><i>O</i>(1)</td>
         <td><i>O</i>(n<sup>2</sup>)</td>
-        <td><i>Θ</i>(n<sup>2</sup>)</td>
+        <td><i>O</i>(n<sup>2</sup>)</td>
     </tr>
     <tr>
         <td><a href="/quickreference/Sorting/MergeSort/MergeSort">Merge Sort</a></td>
@@ -43,7 +43,7 @@
         <td>Array</td>
         <td><i>O</i>(n)</td>
         <td><i>O</i>(n log n)</td>
-        <td><i>Θ</i>(n log n)</td>
+        <td><i>O</i>(n log n)</td>
     </tr>
     <tr>
         <td><a href="/quickreference/Sorting/HeapSort/HeapSort">Heap Sort</a></td>
