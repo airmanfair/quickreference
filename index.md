@@ -97,14 +97,14 @@
                     <td><i>O</i>(d*(n + b))</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/quickreference/Sorting/BucketSort/BucketSort">Bucket Sort</a></td>
+                    <td><a href="/quickreference/Sorting/Sorting">Sorting</a></td>
+                    <td>Linear Sort</td>
+                    <td>Efficient</td>
+                    <td><a href="/quickreference/DataStructures/LinkedList/LinkedList">Linked List</a></td>
+                    <td><i>O</i>(n + p)</td>
+                    <td><i>O</i>(n<sup>2</sup> + p)</td>
+                    <td><i>O</i>(n + p)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

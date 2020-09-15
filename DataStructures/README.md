@@ -22,4 +22,15 @@
         <td><i>O</i>(1) for MaxHeap, <i>O</i>(n) for MinHeap</td>
         <td><i>O</i>(n)</td>
     </tr>
+    <tr>
+        <td><a href="/DataStructures/LinkedList/">Linked List</a></td>
+        <td><i>O</i>(1)</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>NA</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n)</td>
+    </tr>
 </table>
