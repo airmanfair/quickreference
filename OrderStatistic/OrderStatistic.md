@@ -15,7 +15,7 @@
         <td>Efficient</td>
         <td>Array</td>
         <td><i>O</i>(log n)</td>
-        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n<sup>2</sup>)</td>
         <td><i>O</i>(n)</td>
     </tr>
     <tr>
@@ -23,8 +23,8 @@
         <td>Deterministic</td>
         <td>Efficient</td>
         <td>Array</td>
-        <td><i>O</i>(1)</td>
-        <td><i>O</i>(n<sup>2</sup>)</td>
-        <td><i>Θ</i>(n<sup>2</sup>)</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n)</td>
+        <td><i>O</i>(n)</td>
     </tr>
 </table>

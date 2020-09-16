@@ -117,14 +117,14 @@
                     <td><i>O</i>(n)</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td><a href="/quickreference/OrderStatistic/IntroSelect/IntroSelect">Intro Select</a></td>
+                    <td><a href="/quickreference/OrderStatistic/OrderStatistic">Order Statistic</a></td>
+                    <td>Deterministic</td>
+                    <td>Efficient</td>
+                    <td>Array</td>
+                    <td><i>O</i>(n)</td>
+                    <td><i>O</i>(n)</td>
+                    <td><i>O</i>(n)</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

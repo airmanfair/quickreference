@@ -1,4 +1,4 @@
-# Quick Sort
+# Quick Select
 <table>
     <tr>
         <table>
@@ -17,7 +17,7 @@
                 <td>Efficient</td>
                 <td>Array</td>
                 <td><i>O</i>(log n)</td>
-                <td><i>O</i>(n)</td>
+                <td><i>O</i>(n<sup>2</sup>)</td>
                 <td><i>O</i>(n)</td>
             </tr>
         </table>
@@ -50,12 +50,10 @@ def quick_select(ary, i):
     
     def random_partition(start, end):
         k = r.randint(start, end)
-        ary[end], ary[k] = ary[k], ary[end]
-        x, k = ary[end], start - 1
+        ary[end], ary[k], k = ary[k], ary[end], start - 1
         for j in range(start, end):
-            if ary[j] <= x:
-                k += 1
-                ary[k], ary[j] = ary[j], ary[k]
+            if ary[j] <= ary[end]:
+                ary[k+1], ary[j], k = ary[j], ary[k+1], k + 1
         ary[k+1], ary[end] = ary[end], ary[k+1]
         return k + 1
     
@@ -64,12 +62,9 @@ def quick_select(ary, i):
             return ary[start]
         mid = random_partition(start, end)
         k = mid - start + 1
-        if i == k:
-            return ary[mid]
-        elif i < k:
-            return recurse(start, mid - 1, i)
-        else:
-            return recurse(mid + 1, end, i - k)
+        if i == k: return ary[mid]
+        elif i < k: return recurse(start, mid - 1, i)
+        return recurse(mid + 1, end, i - k)
     
     return recurse(0, len(ary) - 1, i)
 {% endhighlight %}
@@ -77,6 +72,8 @@ def quick_select(ary, i):
 <td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
+import java.util.Random;
+
 static int quick_select(int[] ary, int i) {
     return recurse(ary, 0, ary.length - 1, i);
 }
@@ -91,9 +88,8 @@ static int recurse(int[] ary, int start, int end, int i) {
         return ary[mid];
     } else if (i < k) {
         return recurse(ary, start, mid - 1, i);
-    } else {
-        return recurse(ary, mid + 1, end, i - k);
     }
+    return recurse(ary, mid + 1, end, i - k);
 }
 
 static int random_partition(int[] ary, int start, int end) {
