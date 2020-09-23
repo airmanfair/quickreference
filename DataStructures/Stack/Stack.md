@@ -14,12 +14,12 @@
             </tr>
             <tr>
                 <td><i>O</i>(1)</td>
-                <td><i>O</i>(n)</td>
+                <td><i>O</i>(1)</td>
                 <td>NA</td>
-                <td><i>O</i>(n)</td>
-                <td><i>O</i>(n)</td>
-                <td><i>O</i>(n)</td>
-                <td><i>O</i>(n)</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
                 <td><i>O</i>(n)</td>
             </tr>
         </table>
@@ -34,11 +34,58 @@
                 <td class="code" markdown="block" style="vertical-align: top;">
                     
 {% highlight python %}
-          
+class Stack:
+    
+    def __init__(self, ary=[]):
+        self.ary = ary
+        
+    def __str__(self):
+        return str(self.ary)
+    
+    def empty(self):
+        return len(self.ary) == 0
+    
+    def push(self, x):
+        self.ary.append(x)
+        
+    def pop(self):
+        return self.ary.pop()
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
     
 {% highlight java %}
+import java.util.LinkedList;
 
+public class Stack {
+
+    LinkedList<Integer> ary;
+
+    public Stack(int[] ary) {
+        this.ary = new LinkedList<>();
+        for (int x: ary) {
+            this.ary.add(x);
+        }
+    }
+
+    public Stack() {
+        this.ary = new LinkedList<>();
+    }
+
+    public String toString() {
+        return this.ary.toString();
+    }
+
+    public boolean empty() {
+        return this.ary.size() == 0;
+    }
+
+    public void push(int x) {
+        this.ary.add(x);
+    }
+
+    public int pop() {
+        return this.ary.removeLast();
+    }
+}
 {% endhighlight %}
