@@ -1,4 +1,4 @@
-# Linked List
+# Stack
 <table>
     <tr>
         <table>
@@ -31,13 +31,14 @@
 class Stack:
     
     def __init__(self, ary=[]):
-        self.ary = ary
+        self.ary = []
+        for item in ary: self.push(item)
         
     def __str__(self):
         return str(self.ary)
     
-    def empty(self):
-        return len(self.ary) == 0
+    def __len__(self):
+        return len(self.ary)
     
     def push(self, x):
         self.ary.append(x)
@@ -48,37 +49,79 @@ class Stack:
 
 # Java Implementation
 ``` java
-import java.util.LinkedList;
+import java.util.Iterator;
 
-public class Stack {
+public class ListIterator implements Iterator<Integer> {
+    ListNode current;
 
-    LinkedList<Integer> ary;
-
-    public Stack(int[] ary) {
-        this.ary = new LinkedList<>();
-        for (int x: ary) {
-            this.ary.add(x);
-        }
+    public ListIterator(ListNode head) {
+        current = head;
     }
 
+    public boolean hasNext() {
+        return current != null;
+    }
+
+    public Integer next() {
+        Integer val = this.current.val;
+        this.current = current.next;
+        return val;
+    }
+}
+    
+    
+public class ListNode {
+    Integer val;
+    ListNode next;
+
+    public ListNode(Integer val, ListNode next_node) {
+        this.val = val;
+        this.next = next_node;
+    }
+
+    public ListNode(Integer val) {
+        this.val = val;
+        this.next = null;
+    }
+}
+
+    
+public class Stack implements Iterable<Integer> {
+
+    ListNode head;
+    Integer n;
+
     public Stack() {
-        this.ary = new LinkedList<>();
+        this.head = null;
+        this.n = 0;
+    }
+
+    public ListIterator iterator() {
+        return new ListIterator(this.head);
+    }
+
+    public void push(Integer val) {
+        this.head = new ListNode(val, this.head);
+        this.n++;
+    }
+
+    public Integer pop() {
+        Integer ret = this.head.val;
+        this.head = this.head.next;
+        this.n--;
+        return ret;
+    }
+
+    public Integer length() {
+        return this.n;
     }
 
     public String toString() {
-        return this.ary.toString();
-    }
-
-    public boolean empty() {
-        return this.ary.size() == 0;
-    }
-
-    public void push(int x) {
-        this.ary.add(x);
-    }
-
-    public int pop() {
-        return this.ary.removeLast();
+        StringBuilder s = new StringBuilder("[");
+        for (Integer x: this) {
+            s.append(x.toString()).append(", ");
+        }
+        return s.substring(0, s.length() - 2) + "]";
     }
 }
 ```

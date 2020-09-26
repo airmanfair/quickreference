@@ -44,4 +44,15 @@
         <td>NA</td>
         <td><i>O</i>(n)</td>
     </tr>
+    <tr>
+        <td><a href="/quickreference/DataStructures/Queue/Queue">Queue</a></td>
+        <td><i>O</i>(1)</td>
+        <td><i>O</i>(1)</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td><i>O</i>(n)</td>
+    </tr>
 </table>

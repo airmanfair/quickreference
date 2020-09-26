@@ -1,4 +1,4 @@
-# Stack
+# Queue
 <table>
     <tr>
         <table>
@@ -34,23 +34,37 @@
                 <td class="code" markdown="block" style="vertical-align: top;">
                     
 {% highlight python %}
-class Stack:
+class Queue:
     
-    def __init__(self, ary=[]):
-        self.ary = []
-        for item in ary: self.push(item)
+    class Node:
+        
+        def __init__(self, val, next_node=None):
+            self.val, self.next = val, next_node
+    
+    def __init__(self):
+        self.head = self.tail = None
+        self.n = 0
         
     def __str__(self):
-        return str(self.ary)
-    
+        temp, s = self.head, "["
+        while temp:
+            s, temp = s + str(temp.val) + ", ", temp.next
+        return s[:-2] + "]"
+
     def __len__(self):
-        return len(self.ary)
-    
-    def push(self, x):
-        self.ary.append(x)
+        return self.n
         
-    def pop(self):
-        return self.ary.pop()
+    def enqueue(self, val):
+        if self.head:
+            self.tail.next = self.Node(val)
+            self.tail = self.tail.next
+        else:
+            self.head = self.tail = self.Node(val)
+        self.n += 1
+        
+    def dequeue(self):
+        ret, self.head, self.n = self.head.val, self.head.next, self.n - 1
+        return ret
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
@@ -93,13 +107,14 @@ public class ListNode {
 }
 
     
-public class Stack implements Iterable<Integer> {
+public class Queue implements Iterable<Integer> {
 
     ListNode head;
+    ListNode tail;
     Integer n;
 
-    public Stack() {
-        this.head = null;
+    public Queue() {
+        this.head = this.tail = null;
         this.n = 0;
     }
 
@@ -107,12 +122,17 @@ public class Stack implements Iterable<Integer> {
         return new ListIterator(this.head);
     }
 
-    public void push(Integer val) {
-        this.head = new ListNode(val, this.head);
+    public void enqueue(Integer val) {
+        if (this.head != null) {
+            this.tail.next = new ListNode(val);
+            this.tail = this.tail.next;
+        } else {
+            this.head = this.tail = new ListNode(val);
+        }
         this.n++;
     }
 
-    public Integer pop() {
+    public Integer dequeue() {
         Integer ret = this.head.val;
         this.head = this.head.next;
         this.n--;
@@ -131,4 +151,5 @@ public class Stack implements Iterable<Integer> {
         return s.substring(0, s.length() - 2) + "]";
     }
 }
+
 {% endhighlight %}

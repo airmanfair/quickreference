@@ -1,4 +1,4 @@
-# Stack
+# Queue
 <table>
     <tr>
         <table>
@@ -24,38 +24,45 @@
             </tr>
         </table>
     </tr>
-    <tr>
-        <table>
-            <tr style="text-align: center; font-size:20px;">
-                <td><strong><i>Python Implementation</i></strong></td>
-                <td><strong><i>Java Implementation</i></strong></td>
-            </tr>
-            <tr>
-                <td class="code" markdown="block" style="vertical-align: top;">
-                    
-{% highlight python %}
-class Stack:
+</table>
+
+# Python Implementation
+``` python
+class Queue:
     
-    def __init__(self, ary=[]):
-        self.ary = []
-        for item in ary: self.push(item)
+    class Node:
+        
+        def __init__(self, val, next_node=None):
+            self.val, self.next = val, next_node
+    
+    def __init__(self):
+        self.head = self.tail = None
+        self.n = 0
         
     def __str__(self):
-        return str(self.ary)
-    
-    def __len__(self):
-        return len(self.ary)
-    
-    def push(self, x):
-        self.ary.append(x)
-        
-    def pop(self):
-        return self.ary.pop()
-{% endhighlight %}
+        temp, s = self.head, "["
+        while temp:
+            s, temp = s + str(temp.val) + ", ", temp.next
+        return s[:-2] + "]"
 
-<td class="code" markdown="block" style="vertical-align: top;">
-    
-{% highlight java %}
+    def __len__(self):
+        return self.n
+        
+    def enqueue(self, val):
+        if self.head:
+            self.tail.next = self.Node(val)
+            self.tail = self.tail.next
+        else:
+            self.head = self.tail = self.Node(val)
+        self.n += 1
+        
+    def dequeue(self):
+        ret, self.head, self.n = self.head.val, self.head.next, self.n - 1
+        return ret
+```
+
+# Java Implementation
+``` java
 import java.util.Iterator;
 
 public class ListIterator implements Iterator<Integer> {
@@ -131,4 +138,4 @@ public class Stack implements Iterable<Integer> {
         return s.substring(0, s.length() - 2) + "]";
     }
 }
-{% endhighlight %}
+```
