@@ -26,12 +26,12 @@
         <td><a href="/DataStructures/LinkedList/">Linked List</a></td>
         <td><i>O</i>(1)</td>
         <td><i>O</i>(1)</td>
-        <td><i>O</i>NA</td>
-        <td><i>O</i>NA</td>
+        <td>NA</td>
+        <td>NA</td>
         <td><i>O</i>(n)</td>
-        <td><i>O</i>NA</td>
-        <td><i>O</i>NA</td>
-        <td><i>O</i>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
     </tr>
     <tr>
         <td><a href="/DataStructures/Stack/">Stack</a></td>
