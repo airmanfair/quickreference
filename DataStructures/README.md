@@ -31,7 +31,7 @@
         <td><i>O</i>(n)</td>
         <td>NA</td>
         <td>NA</td>
-        <td>NA</td>
+        <td><i>O</i>(n)</td>
     </tr>
     <tr>
         <td><a href="/DataStructures/Stack/">Stack</a></td>
