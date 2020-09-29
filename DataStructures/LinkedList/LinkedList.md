@@ -67,6 +67,9 @@ class LinkedList:
     def __str__(self):
         return str(list(self))
     
+    def __len__(self):
+        return self.n
+    
     def search(self, key):
         node = self.nil.next
         while node is not self.nil and node.val != key: 
@@ -76,11 +79,11 @@ class LinkedList:
     def insert(self, val):
         node = self.Node(val if type(val) == int else val.val, self.nil.next, self.nil)
         self.nil.next.prev = node
-        self.nil.next = node
+        self.nil.next, self.n = node, self.n + 1
     
     def delete(self, node):
         if node:
-            node.prev.next, node.next.prev = node.next, node.prev        
+            node.prev.next, node.next.prev, self.n = node.next, node.prev, self.n - 1        
 {% endhighlight %}
 
 <td class="code" markdown="block" style="vertical-align: top;">
@@ -163,11 +166,17 @@ public class LinkedList implements Iterable<Integer> {
         this.nil.next.prev = node;
         this.nil.next = node;
         node.prev = this.nil;
+        this.n++;
     }
 
     public void delete(ListNode node) {
         node.prev.next = node.next;
         node.next.prev = node.prev;
+        this.n--;
+    }
+
+    public Integer length() {
+        return this.n;
     }
 
     public String toString() {
