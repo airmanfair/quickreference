@@ -66,4 +66,15 @@
         <td><i>O</i>(log n)</td>
         <td><i>O</i>(n)</td>
     </tr>
+    <tr>
+        <td><a href="/quickreference/DataStructures/RedBlackTree/RedBlackTree">Red Black Tree</a></td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+    </tr>
 </table>

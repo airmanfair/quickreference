@@ -56,7 +56,7 @@
         <td><i>O</i>(n)</td>
     </tr>
     <tr>
-        <td><a href="/quickreference/DataStructures/BinarySearchTree/BinarySearchTree">Binary Search Tree</a></td>
+        <td><a href="/DataStructures/BinarySearchTree/">Binary Search Tree</a></td>
         <td><i>O</i>(log n)</td>
         <td><i>O</i>(log n)</td>
         <td>NA</td>
@@ -65,5 +65,16 @@
         <td><i>O</i>(log n)</td>
         <td><i>O</i>(log n)</td>
         <td><i>O</i>(n)</td>
+    </tr>
+    <tr>
+        <td><a href="/DataStructures/RedBlackTree/">Red Black Tree</a></td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>NA</td>
     </tr>
 </table>
